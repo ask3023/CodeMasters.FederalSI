@@ -1,0 +1,12 @@
+﻿<resources>
+  <style name="SITheme.Base" parent="Theme.AppCompat.Light">
+  </style>
+
+  <style name="SITheme" parent="SITheme.Base">
+  </style>
+
+  <style name="SITheme.Splash" parent ="Theme.AppCompat.Light">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+</resources>
