@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SIMarketplace.WebApi")]
+[assembly: AssemblyTitle("CodeMasters.FederalSI.WebApi")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SIMarketplace.WebApi")]
+[assembly: AssemblyProduct("CodeMasters.FederalSI.WebApi")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("eb072cac-d252-4cff-892f-dfc5973d0471")]
+[assembly: Guid("6adc32b6-53e8-4748-bd44-1edc15b07518")]
 
 // Version information for an assembly consists of the following four values:
 //
