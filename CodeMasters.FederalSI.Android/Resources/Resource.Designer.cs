@@ -26,6 +26,43 @@ namespace CodeMasters.FederalSI.Android
 		
 		public static void UpdateIdValues()
 		{
+			global::AndroidHUD.Resource.Attribute.ahBarColor = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahBarColor;
+			global::AndroidHUD.Resource.Attribute.ahBarLength = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahBarLength;
+			global::AndroidHUD.Resource.Attribute.ahBarWidth = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahBarWidth;
+			global::AndroidHUD.Resource.Attribute.ahCircleColor = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahCircleColor;
+			global::AndroidHUD.Resource.Attribute.ahDelayMillis = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahDelayMillis;
+			global::AndroidHUD.Resource.Attribute.ahRadius = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahRadius;
+			global::AndroidHUD.Resource.Attribute.ahRimColor = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahRimColor;
+			global::AndroidHUD.Resource.Attribute.ahRimWidth = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahRimWidth;
+			global::AndroidHUD.Resource.Attribute.ahSpinSpeed = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahSpinSpeed;
+			global::AndroidHUD.Resource.Attribute.ahText = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahText;
+			global::AndroidHUD.Resource.Attribute.ahTextColor = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahTextColor;
+			global::AndroidHUD.Resource.Attribute.ahTextSize = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahTextSize;
+			global::AndroidHUD.Resource.Drawable.ic_errorstatus = global::CodeMasters.FederalSI.Android.Resource.Drawable.ic_errorstatus;
+			global::AndroidHUD.Resource.Drawable.ic_successstatus = global::CodeMasters.FederalSI.Android.Resource.Drawable.ic_successstatus;
+			global::AndroidHUD.Resource.Drawable.roundedbg = global::CodeMasters.FederalSI.Android.Resource.Drawable.roundedbg;
+			global::AndroidHUD.Resource.Drawable.roundedbgdark = global::CodeMasters.FederalSI.Android.Resource.Drawable.roundedbgdark;
+			global::AndroidHUD.Resource.Id.loadingImage = global::CodeMasters.FederalSI.Android.Resource.Id.loadingImage;
+			global::AndroidHUD.Resource.Id.loadingProgressBar = global::CodeMasters.FederalSI.Android.Resource.Id.loadingProgressBar;
+			global::AndroidHUD.Resource.Id.loadingProgressWheel = global::CodeMasters.FederalSI.Android.Resource.Id.loadingProgressWheel;
+			global::AndroidHUD.Resource.Id.textViewStatus = global::CodeMasters.FederalSI.Android.Resource.Id.textViewStatus;
+			global::AndroidHUD.Resource.Layout.loading = global::CodeMasters.FederalSI.Android.Resource.Layout.loading;
+			global::AndroidHUD.Resource.Layout.loadingimage = global::CodeMasters.FederalSI.Android.Resource.Layout.loadingimage;
+			global::AndroidHUD.Resource.Layout.loadingprogress = global::CodeMasters.FederalSI.Android.Resource.Layout.loadingprogress;
+			global::AndroidHUD.Resource.String.library_name = global::CodeMasters.FederalSI.Android.Resource.String.library_name;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarColor = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahBarColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarLength = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahBarLength;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarWidth = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahBarWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahCircleColor = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahCircleColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahDelayMillis = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahDelayMillis;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRadius = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahRadius;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimColor = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahRimColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimWidth = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahRimWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahSpinSpeed = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahSpinSpeed;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahText;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahTextColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahTextSize;
 		}
 		
 		public partial class Animation
@@ -175,6 +212,42 @@ namespace CodeMasters.FederalSI.Android
 			
 			// aapt resource value: 0x7f010085
 			public const int activityChooserViewStyle = 2130772101;
+			
+			// aapt resource value: 0x7f0100d1
+			public const int ahBarColor = 2130772177;
+			
+			// aapt resource value: 0x7f0100d9
+			public const int ahBarLength = 2130772185;
+			
+			// aapt resource value: 0x7f0100d8
+			public const int ahBarWidth = 2130772184;
+			
+			// aapt resource value: 0x7f0100d6
+			public const int ahCircleColor = 2130772182;
+			
+			// aapt resource value: 0x7f0100d5
+			public const int ahDelayMillis = 2130772181;
+			
+			// aapt resource value: 0x7f0100d7
+			public const int ahRadius = 2130772183;
+			
+			// aapt resource value: 0x7f0100d2
+			public const int ahRimColor = 2130772178;
+			
+			// aapt resource value: 0x7f0100d3
+			public const int ahRimWidth = 2130772179;
+			
+			// aapt resource value: 0x7f0100d4
+			public const int ahSpinSpeed = 2130772180;
+			
+			// aapt resource value: 0x7f0100ce
+			public const int ahText = 2130772174;
+			
+			// aapt resource value: 0x7f0100cf
+			public const int ahTextColor = 2130772175;
+			
+			// aapt resource value: 0x7f0100d0
+			public const int ahTextSize = 2130772176;
 			
 			// aapt resource value: 0x7f0100a8
 			public const int alertDialogButtonGroupStyle = 2130772136;
@@ -1426,16 +1499,28 @@ namespace CodeMasters.FederalSI.Android
 			public const int abc_textfield_search_material = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int Icon = 2130837573;
+			public const int ic_errorstatus = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int monoandroidsplash = 2130837574;
-			
-			// aapt resource value: 0x7f020048
-			public const int notification_template_icon_bg = 2130837576;
+			public const int ic_successstatus = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int splash_screen = 2130837575;
+			public const int Icon = 2130837575;
+			
+			// aapt resource value: 0x7f020048
+			public const int monoandroidsplash = 2130837576;
+			
+			// aapt resource value: 0x7f02004c
+			public const int notification_template_icon_bg = 2130837580;
+			
+			// aapt resource value: 0x7f020049
+			public const int roundedbg = 2130837577;
+			
+			// aapt resource value: 0x7f02004a
+			public const int roundedbgdark = 2130837578;
+			
+			// aapt resource value: 0x7f02004b
+			public const int splash_screen = 2130837579;
 			
 			static Drawable()
 			{
@@ -1450,11 +1535,8 @@ namespace CodeMasters.FederalSI.Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0050
-			public const int MyButton = 2131427408;
-			
-			// aapt resource value: 0x7f0b0051
-			public const int action0 = 2131427409;
+			// aapt resource value: 0x7f0b0054
+			public const int action0 = 2131427412;
 			
 			// aapt resource value: 0x7f0b0041
 			public const int action_bar = 2131427393;
@@ -1480,8 +1562,8 @@ namespace CodeMasters.FederalSI.Android
 			// aapt resource value: 0x7f0b0042
 			public const int action_context_bar = 2131427394;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int action_divider = 2131427413;
+			// aapt resource value: 0x7f0b0058
+			public const int action_divider = 2131427416;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1513,14 +1595,14 @@ namespace CodeMasters.FederalSI.Android
 			// aapt resource value: 0x7f0b002b
 			public const int buttonPanel = 2131427371;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int cancel_action = 2131427410;
+			// aapt resource value: 0x7f0b0055
+			public const int cancel_action = 2131427413;
 			
 			// aapt resource value: 0x7f0b0039
 			public const int checkbox = 2131427385;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int chronometer = 2131427416;
+			// aapt resource value: 0x7f0b005b
+			public const int chronometer = 2131427419;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int collapseActionView = 2131427356;
@@ -1549,8 +1631,8 @@ namespace CodeMasters.FederalSI.Android
 			// aapt resource value: 0x7f0b0019
 			public const int end = 2131427353;
 			
-			// aapt resource value: 0x7f0b005d
-			public const int end_padder = 2131427421;
+			// aapt resource value: 0x7f0b0060
+			public const int end_padder = 2131427424;
 			
 			// aapt resource value: 0x7f0b0025
 			public const int expand_activities_button = 2131427365;
@@ -1573,14 +1655,14 @@ namespace CodeMasters.FederalSI.Android
 			// aapt resource value: 0x7f0b0026
 			public const int image = 2131427366;
 			
-			// aapt resource value: 0x7f0b005c
-			public const int info = 2131427420;
+			// aapt resource value: 0x7f0b005f
+			public const int info = 2131427423;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int line1 = 2131427414;
+			// aapt resource value: 0x7f0b0059
+			public const int line1 = 2131427417;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int line3 = 2131427418;
+			// aapt resource value: 0x7f0b005d
+			public const int line3 = 2131427421;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
@@ -1588,8 +1670,17 @@ namespace CodeMasters.FederalSI.Android
 			// aapt resource value: 0x7f0b0028
 			public const int list_item = 2131427368;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int media_actions = 2131427412;
+			// aapt resource value: 0x7f0b0052
+			public const int loadingImage = 2131427410;
+			
+			// aapt resource value: 0x7f0b0050
+			public const int loadingProgressBar = 2131427408;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int loadingProgressWheel = 2131427411;
+			
+			// aapt resource value: 0x7f0b0057
+			public const int media_actions = 2131427415;
 			
 			// aapt resource value: 0x7f0b001a
 			public const int middle = 2131427354;
@@ -1690,8 +1781,8 @@ namespace CodeMasters.FederalSI.Android
 			// aapt resource value: 0x7f0b0017
 			public const int src_over = 2131427351;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int status_bar_latest_event_content = 2131427411;
+			// aapt resource value: 0x7f0b0056
+			public const int status_bar_latest_event_content = 2131427414;
 			
 			// aapt resource value: 0x7f0b004c
 			public const int submit_area = 2131427404;
@@ -1699,17 +1790,20 @@ namespace CodeMasters.FederalSI.Android
 			// aapt resource value: 0x7f0b000b
 			public const int tabMode = 2131427339;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int text = 2131427419;
+			// aapt resource value: 0x7f0b005e
+			public const int text = 2131427422;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int text2 = 2131427417;
+			// aapt resource value: 0x7f0b005c
+			public const int text2 = 2131427420;
 			
 			// aapt resource value: 0x7f0b0034
 			public const int textSpacerNoButtons = 2131427380;
 			
-			// aapt resource value: 0x7f0b0057
-			public const int time = 2131427415;
+			// aapt resource value: 0x7f0b0051
+			public const int textViewStatus = 2131427409;
+			
+			// aapt resource value: 0x7f0b005a
+			public const int time = 2131427418;
 			
 			// aapt resource value: 0x7f0b002a
 			public const int title = 2131427370;
@@ -1849,43 +1943,52 @@ namespace CodeMasters.FederalSI.Android
 			public const int abc_select_dialog_material = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int Main = 2130903065;
+			public const int loading = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int notification_media_action = 2130903066;
+			public const int loadingimage = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int notification_media_cancel_action = 2130903067;
+			public const int loadingprogress = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int notification_template_big_media = 2130903068;
+			public const int notification_media_action = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int notification_template_big_media_narrow = 2130903069;
+			public const int notification_media_cancel_action = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int notification_template_lines = 2130903070;
+			public const int notification_template_big_media = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int notification_template_media = 2130903071;
+			public const int notification_template_big_media_narrow = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int notification_template_part_chronometer = 2130903072;
+			public const int notification_template_lines = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int notification_template_part_time = 2130903073;
+			public const int notification_template_media = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int select_dialog_item_material = 2130903074;
+			public const int notification_template_part_chronometer = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int select_dialog_multichoice_material = 2130903075;
+			public const int notification_template_part_time = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int select_dialog_singlechoice_material = 2130903076;
+			public const int select_dialog_item_material = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int support_simple_spinner_dropdown_item = 2130903077;
+			public const int select_dialog_multichoice_material = 2130903077;
+			
+			// aapt resource value: 0x7f030026
+			public const int select_dialog_singlechoice_material = 2130903078;
+			
+			// aapt resource value: 0x7f030027
+			public const int SolutionList = 2130903079;
+			
+			// aapt resource value: 0x7f030028
+			public const int support_simple_spinner_dropdown_item = 2130903080;
 			
 			static Layout()
 			{
@@ -1900,11 +2003,11 @@ namespace CodeMasters.FederalSI.Android
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050015
-			public const int ApplicationName = 2131034133;
+			// aapt resource value: 0x7f050016
+			public const int ApplicationName = 2131034134;
 			
-			// aapt resource value: 0x7f050014
-			public const int Hello = 2131034132;
+			// aapt resource value: 0x7f050015
+			public const int Hello = 2131034133;
 			
 			// aapt resource value: 0x7f050000
 			public const int abc_action_bar_home_description = 2131034112;
@@ -1962,6 +2065,9 @@ namespace CodeMasters.FederalSI.Android
 			
 			// aapt resource value: 0x7f050012
 			public const int abc_toolbar_collapse_description = 2131034130;
+			
+			// aapt resource value: 0x7f050014
+			public const int library_name = 2131034132;
 			
 			// aapt resource value: 0x7f050013
 			public const int status_bar_notification_info_overflow = 2131034131;
@@ -3386,6 +3492,56 @@ namespace CodeMasters.FederalSI.Android
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
+			
+			public static int[] ProgressWheel = new int[] {
+					2130772174,
+					2130772175,
+					2130772176,
+					2130772177,
+					2130772178,
+					2130772179,
+					2130772180,
+					2130772181,
+					2130772182,
+					2130772183,
+					2130772184,
+					2130772185};
+			
+			// aapt resource value: 3
+			public const int ProgressWheel_ahBarColor = 3;
+			
+			// aapt resource value: 11
+			public const int ProgressWheel_ahBarLength = 11;
+			
+			// aapt resource value: 10
+			public const int ProgressWheel_ahBarWidth = 10;
+			
+			// aapt resource value: 8
+			public const int ProgressWheel_ahCircleColor = 8;
+			
+			// aapt resource value: 7
+			public const int ProgressWheel_ahDelayMillis = 7;
+			
+			// aapt resource value: 9
+			public const int ProgressWheel_ahRadius = 9;
+			
+			// aapt resource value: 4
+			public const int ProgressWheel_ahRimColor = 4;
+			
+			// aapt resource value: 5
+			public const int ProgressWheel_ahRimWidth = 5;
+			
+			// aapt resource value: 6
+			public const int ProgressWheel_ahSpinSpeed = 6;
+			
+			// aapt resource value: 0
+			public const int ProgressWheel_ahText = 0;
+			
+			// aapt resource value: 1
+			public const int ProgressWheel_ahTextColor = 1;
+			
+			// aapt resource value: 2
+			public const int ProgressWheel_ahTextSize = 2;
 			
 			public static int[] SearchView = new int[] {
 					16842970,

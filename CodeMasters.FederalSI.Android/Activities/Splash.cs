@@ -5,6 +5,12 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using AndroidHUD;
+using CodeMasters.FederalSI.Shared.Service;
+using System.Collections.Generic;
+using CodeMasters.FederalSI.Shared.Model;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace CodeMasters.FederalSI.Android
 {
@@ -17,11 +23,31 @@ namespace CodeMasters.FederalSI.Android
         {
             base.OnCreate(bundle);
 
-            // Load the data asynchronously
-
             // Show loading indicator
+            AndHUD.Shared.Show(this, "Loading", -1, MaskType.Clear);
 
-            // Launch new activity with loaded data
+            // Load the data asynchronously
+            Task<List<Solution>> dataTask = Task.Factory.StartNew(new Func<List<Solution>>(FetchData));
+
+            dataTask.ContinueWith((previousTask) =>
+            {
+                // Launch new activity with loaded data
+                var homeScreen = new Intent(this, typeof(SolutionList));
+                homeScreen.PutExtra("JsonSolutionsString", JsonHelper.SerializeSolutions(previousTask.Result));
+
+                AndHUD.Shared.Dismiss();
+            }
+            );
+        }
+
+        private List<Solution> FetchData()
+        {
+            DataService service = new DataService();
+            List<Solution> solutions = service.GetSolutions();
+            // TODO: just to simulate delay of data retrieval
+            Thread.Sleep(10000);
+
+            return solutions;
         }
     }
 }
