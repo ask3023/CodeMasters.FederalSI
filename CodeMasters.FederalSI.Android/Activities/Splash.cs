@@ -12,7 +12,7 @@ using CodeMasters.FederalSI.Shared.Model;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace CodeMasters.FederalSI.Android
+namespace CodeMasters.FederalSI.Droid
 {
     [Activity(Label = "SIMarketplace.Android", MainLauncher = true, // Icon = "@drawable/icon",
                 NoHistory=true,
@@ -32,8 +32,10 @@ namespace CodeMasters.FederalSI.Android
             dataTask.ContinueWith((previousTask) =>
             {
                 // Launch new activity with loaded data
-                var homeScreen = new Intent(this, typeof(SolutionList));
-                homeScreen.PutExtra("JsonSolutionsString", JsonHelper.SerializeSolutions(previousTask.Result));
+                var homeScreenIntent = new Intent(this, typeof(SolutionList));
+                string solutionsJson = JsonHelper.SerializeSolutions(previousTask.Result);
+                homeScreenIntent.PutExtra("JsonSolutionsString", solutionsJson);
+                StartActivity(homeScreenIntent);
 
                 AndHUD.Shared.Dismiss();
             }
@@ -45,7 +47,7 @@ namespace CodeMasters.FederalSI.Android
             DataService service = new DataService();
             List<Solution> solutions = service.GetSolutions();
             // TODO: just to simulate delay of data retrieval
-            Thread.Sleep(10000);
+            Thread.Sleep(5000);
 
             return solutions;
         }

@@ -3,5 +3,87 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="430dp">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView1"
+            android:layout_margin="4dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:listSelector="#00ff00" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="47.0dp"
+        android:id="@+id/hLinearLayout1">
+        <Button
+            android:text="Project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnProject"
+            android:layout_marginLeft="1dp"
+            android:foregroundTint="#0000ffff" />
+        <Button
+            android:text="Requirement"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnRequirement" />
+        <Button
+            android:text="Code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnCode" />
+        <Button
+            android:text="Support"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSupport" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="47.0dp"
+        android:id="@+id/hLinearLayout2"
+        android:layout_marginBottom="0.0dp">
+        <Button
+            android:text="Deployment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnDeployment"
+            android:layout_marginLeft="1dp" />
+        <Button
+            android:text="Test"
+            android:layout_width="59.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnTest" />
+        <Button
+            android:text="Project Health Metrics"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnPHM" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="47.0dp"
+        android:id="@+id/hLinearLayout3">
+        <Button
+            android:text="Key Impact Deliverables"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnKID"
+            android:layout_marginLeft="1dp" />
+        <Button
+            android:text="Training / Change"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnTC" />
+    </LinearLayout>
 </LinearLayout>

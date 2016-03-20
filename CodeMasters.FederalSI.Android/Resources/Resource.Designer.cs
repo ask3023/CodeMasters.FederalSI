@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("CodeMasters.FederalSI.Android.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("CodeMasters.FederalSI.Droid.Resource", IsApplication=true)]
 
-namespace CodeMasters.FederalSI.Android
+namespace CodeMasters.FederalSI.Droid
 {
 	
 	
@@ -26,43 +26,43 @@ namespace CodeMasters.FederalSI.Android
 		
 		public static void UpdateIdValues()
 		{
-			global::AndroidHUD.Resource.Attribute.ahBarColor = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahBarColor;
-			global::AndroidHUD.Resource.Attribute.ahBarLength = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahBarLength;
-			global::AndroidHUD.Resource.Attribute.ahBarWidth = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahBarWidth;
-			global::AndroidHUD.Resource.Attribute.ahCircleColor = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahCircleColor;
-			global::AndroidHUD.Resource.Attribute.ahDelayMillis = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahDelayMillis;
-			global::AndroidHUD.Resource.Attribute.ahRadius = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahRadius;
-			global::AndroidHUD.Resource.Attribute.ahRimColor = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahRimColor;
-			global::AndroidHUD.Resource.Attribute.ahRimWidth = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahRimWidth;
-			global::AndroidHUD.Resource.Attribute.ahSpinSpeed = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahSpinSpeed;
-			global::AndroidHUD.Resource.Attribute.ahText = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahText;
-			global::AndroidHUD.Resource.Attribute.ahTextColor = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahTextColor;
-			global::AndroidHUD.Resource.Attribute.ahTextSize = global::CodeMasters.FederalSI.Android.Resource.Attribute.ahTextSize;
-			global::AndroidHUD.Resource.Drawable.ic_errorstatus = global::CodeMasters.FederalSI.Android.Resource.Drawable.ic_errorstatus;
-			global::AndroidHUD.Resource.Drawable.ic_successstatus = global::CodeMasters.FederalSI.Android.Resource.Drawable.ic_successstatus;
-			global::AndroidHUD.Resource.Drawable.roundedbg = global::CodeMasters.FederalSI.Android.Resource.Drawable.roundedbg;
-			global::AndroidHUD.Resource.Drawable.roundedbgdark = global::CodeMasters.FederalSI.Android.Resource.Drawable.roundedbgdark;
-			global::AndroidHUD.Resource.Id.loadingImage = global::CodeMasters.FederalSI.Android.Resource.Id.loadingImage;
-			global::AndroidHUD.Resource.Id.loadingProgressBar = global::CodeMasters.FederalSI.Android.Resource.Id.loadingProgressBar;
-			global::AndroidHUD.Resource.Id.loadingProgressWheel = global::CodeMasters.FederalSI.Android.Resource.Id.loadingProgressWheel;
-			global::AndroidHUD.Resource.Id.textViewStatus = global::CodeMasters.FederalSI.Android.Resource.Id.textViewStatus;
-			global::AndroidHUD.Resource.Layout.loading = global::CodeMasters.FederalSI.Android.Resource.Layout.loading;
-			global::AndroidHUD.Resource.Layout.loadingimage = global::CodeMasters.FederalSI.Android.Resource.Layout.loadingimage;
-			global::AndroidHUD.Resource.Layout.loadingprogress = global::CodeMasters.FederalSI.Android.Resource.Layout.loadingprogress;
-			global::AndroidHUD.Resource.String.library_name = global::CodeMasters.FederalSI.Android.Resource.String.library_name;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarColor = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahBarColor;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarLength = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahBarLength;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarWidth = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahBarWidth;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahCircleColor = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahCircleColor;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahDelayMillis = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahDelayMillis;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRadius = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahRadius;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimColor = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahRimColor;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimWidth = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahRimWidth;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahSpinSpeed = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahSpinSpeed;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahText;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahTextColor;
-			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::CodeMasters.FederalSI.Android.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::AndroidHUD.Resource.Attribute.ahBarColor = global::CodeMasters.FederalSI.Droid.Resource.Attribute.ahBarColor;
+			global::AndroidHUD.Resource.Attribute.ahBarLength = global::CodeMasters.FederalSI.Droid.Resource.Attribute.ahBarLength;
+			global::AndroidHUD.Resource.Attribute.ahBarWidth = global::CodeMasters.FederalSI.Droid.Resource.Attribute.ahBarWidth;
+			global::AndroidHUD.Resource.Attribute.ahCircleColor = global::CodeMasters.FederalSI.Droid.Resource.Attribute.ahCircleColor;
+			global::AndroidHUD.Resource.Attribute.ahDelayMillis = global::CodeMasters.FederalSI.Droid.Resource.Attribute.ahDelayMillis;
+			global::AndroidHUD.Resource.Attribute.ahRadius = global::CodeMasters.FederalSI.Droid.Resource.Attribute.ahRadius;
+			global::AndroidHUD.Resource.Attribute.ahRimColor = global::CodeMasters.FederalSI.Droid.Resource.Attribute.ahRimColor;
+			global::AndroidHUD.Resource.Attribute.ahRimWidth = global::CodeMasters.FederalSI.Droid.Resource.Attribute.ahRimWidth;
+			global::AndroidHUD.Resource.Attribute.ahSpinSpeed = global::CodeMasters.FederalSI.Droid.Resource.Attribute.ahSpinSpeed;
+			global::AndroidHUD.Resource.Attribute.ahText = global::CodeMasters.FederalSI.Droid.Resource.Attribute.ahText;
+			global::AndroidHUD.Resource.Attribute.ahTextColor = global::CodeMasters.FederalSI.Droid.Resource.Attribute.ahTextColor;
+			global::AndroidHUD.Resource.Attribute.ahTextSize = global::CodeMasters.FederalSI.Droid.Resource.Attribute.ahTextSize;
+			global::AndroidHUD.Resource.Drawable.ic_errorstatus = global::CodeMasters.FederalSI.Droid.Resource.Drawable.ic_errorstatus;
+			global::AndroidHUD.Resource.Drawable.ic_successstatus = global::CodeMasters.FederalSI.Droid.Resource.Drawable.ic_successstatus;
+			global::AndroidHUD.Resource.Drawable.roundedbg = global::CodeMasters.FederalSI.Droid.Resource.Drawable.roundedbg;
+			global::AndroidHUD.Resource.Drawable.roundedbgdark = global::CodeMasters.FederalSI.Droid.Resource.Drawable.roundedbgdark;
+			global::AndroidHUD.Resource.Id.loadingImage = global::CodeMasters.FederalSI.Droid.Resource.Id.loadingImage;
+			global::AndroidHUD.Resource.Id.loadingProgressBar = global::CodeMasters.FederalSI.Droid.Resource.Id.loadingProgressBar;
+			global::AndroidHUD.Resource.Id.loadingProgressWheel = global::CodeMasters.FederalSI.Droid.Resource.Id.loadingProgressWheel;
+			global::AndroidHUD.Resource.Id.textViewStatus = global::CodeMasters.FederalSI.Droid.Resource.Id.textViewStatus;
+			global::AndroidHUD.Resource.Layout.loading = global::CodeMasters.FederalSI.Droid.Resource.Layout.loading;
+			global::AndroidHUD.Resource.Layout.loadingimage = global::CodeMasters.FederalSI.Droid.Resource.Layout.loadingimage;
+			global::AndroidHUD.Resource.Layout.loadingprogress = global::CodeMasters.FederalSI.Droid.Resource.Layout.loadingprogress;
+			global::AndroidHUD.Resource.String.library_name = global::CodeMasters.FederalSI.Droid.Resource.String.library_name;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarColor = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahBarColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarLength = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahBarLength;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarWidth = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahBarWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahCircleColor = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahCircleColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahDelayMillis = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahDelayMillis;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRadius = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahRadius;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimColor = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahRimColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimWidth = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahRimWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahSpinSpeed = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahSpinSpeed;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahText;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
 		}
 		
 		public partial class Animation
@@ -1592,6 +1592,33 @@ namespace CodeMasters.FederalSI.Android
 			// aapt resource value: 0x7f0b0018
 			public const int beginning = 2131427352;
 			
+			// aapt resource value: 0x7f0b0065
+			public const int btnCode = 2131427429;
+			
+			// aapt resource value: 0x7f0b0068
+			public const int btnDeployment = 2131427432;
+			
+			// aapt resource value: 0x7f0b006c
+			public const int btnKID = 2131427436;
+			
+			// aapt resource value: 0x7f0b006a
+			public const int btnPHM = 2131427434;
+			
+			// aapt resource value: 0x7f0b0063
+			public const int btnProject = 2131427427;
+			
+			// aapt resource value: 0x7f0b0064
+			public const int btnRequirement = 2131427428;
+			
+			// aapt resource value: 0x7f0b0066
+			public const int btnSupport = 2131427430;
+			
+			// aapt resource value: 0x7f0b006d
+			public const int btnTC = 2131427437;
+			
+			// aapt resource value: 0x7f0b0069
+			public const int btnTest = 2131427433;
+			
 			// aapt resource value: 0x7f0b002b
 			public const int buttonPanel = 2131427371;
 			
@@ -1640,6 +1667,15 @@ namespace CodeMasters.FederalSI.Android
 			// aapt resource value: 0x7f0b0038
 			public const int expanded_menu = 2131427384;
 			
+			// aapt resource value: 0x7f0b0062
+			public const int hLinearLayout1 = 2131427426;
+			
+			// aapt resource value: 0x7f0b0067
+			public const int hLinearLayout2 = 2131427431;
+			
+			// aapt resource value: 0x7f0b006b
+			public const int hLinearLayout3 = 2131427435;
+			
 			// aapt resource value: 0x7f0b0004
 			public const int home = 2131427332;
 			
@@ -1666,6 +1702,9 @@ namespace CodeMasters.FederalSI.Android
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
+			
+			// aapt resource value: 0x7f0b0061
+			public const int listView1 = 2131427425;
 			
 			// aapt resource value: 0x7f0b0028
 			public const int list_item = 2131427368;
