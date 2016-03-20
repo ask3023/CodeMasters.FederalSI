@@ -12,7 +12,7 @@ using Android.Widget;
 using CodeMasters.FederalSI.Shared.Model;
 using Newtonsoft.Json;
 
-namespace CodeMasters.FederalSI.Android
+namespace CodeMasters.FederalSI.Droid
 {
     public class JsonHelper
     {
