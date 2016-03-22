@@ -78,6 +78,9 @@
     <AndroidResource Include="Resources\layout\SolutionList.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\SolutionItem.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -104,6 +107,9 @@
       <Project>{832d6def-e2dd-4cfe-81d4-f2b3e7bbbe78}</Project>
       <Name>CodeMasters.FederalSI.Shared</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SolutionItemSelector.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

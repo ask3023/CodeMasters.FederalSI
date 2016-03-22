@@ -51,10 +51,11 @@ namespace CodeMasters.FederalSI.Droid
 
             if(convertView == null)
             {
-                convertView = _context.LayoutInflater.Inflate(global::Android.Resource.Layout.SimpleListItem1, null);
+                // convertView = _context.LayoutInflater.Inflate(global::Android.Resource.Layout.SimpleListItem1, null);
+                convertView = _context.LayoutInflater.Inflate(Resource.Layout.SolutionItem, null);
             }
 
-            convertView.FindViewById<TextView>(global::Android.Resource.Id.Text1).Text = sol.Name;
+            convertView.FindViewById<TextView>(Resource.Id.SolName).Text = sol.Name;
 
             return convertView;
         }

@@ -32,6 +32,28 @@ namespace CodeMasters.FederalSI.Droid
             solutionListView.Adapter = new SolutionListAdapter(this, solutions);
             solutionListView.FastScrollEnabled = true;
 
+            solutionListView.ItemClick += SolutionListView_ItemClick;
+            solutionListView.ItemSelected += SolutionListView_ItemSelected;
+            solutionListView.ItemSelectionCleared += SolutionListView_ItemSelectionCleared;
+
+            solutionListView.SetSelector(Resource.Color.cellbackSelected);
+
+        }
+
+        private void SolutionListView_ItemSelectionCleared(object sender, EventArgs e)
+        {
+            // throw new NotImplementedException();
+        }
+
+        private void SolutionListView_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+            // throw new NotImplementedException();
+        }
+
+        private void SolutionListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            // solutionListView.SetSelection(e.Position);
+            // throw new NotImplementedException();
         }
     }
 }
