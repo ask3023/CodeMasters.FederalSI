@@ -3,6 +3,7 @@
   </style>
 
   <style name="SITheme" parent="SITheme.Base">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
   </style>
 
   <style name="SITheme.Splash" parent ="Theme.AppCompat.Light">

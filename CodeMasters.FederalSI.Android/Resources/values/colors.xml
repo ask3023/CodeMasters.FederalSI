@@ -5,4 +5,6 @@
   <color name="accent">#FFC107</color>
   <color name="window_background">#F5F5F5</color>
   <color name="splash_background">#00ff00</color>
+  <color name="cellback">#FFDAFF7F</color>
+  <color name="cellbackSelected">#660066</color>
 </resources>

@@ -16,7 +16,8 @@
             android:layout_margin="4dp"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
-            android:listSelector="#00ff00" />
+            android:dividerHeight="5dp"
+            android:divider="#333300" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
