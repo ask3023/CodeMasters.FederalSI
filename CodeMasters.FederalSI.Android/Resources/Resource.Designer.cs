@@ -63,6 +63,28 @@ namespace CodeMasters.FederalSI.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahText;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::CodeMasters.FederalSI.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::SatelliteMenu.Resource.Animation.popoutMenuItemAnticipateInterpolator = global::CodeMasters.FederalSI.Droid.Resource.Animation.popoutMenuItemAnticipateInterpolator;
+			global::SatelliteMenu.Resource.Animation.popoutMenuItemClickAnim = global::CodeMasters.FederalSI.Droid.Resource.Animation.popoutMenuItemClickAnim;
+			global::SatelliteMenu.Resource.Animation.popoutMenuItemClickInterpolator = global::CodeMasters.FederalSI.Droid.Resource.Animation.popoutMenuItemClickInterpolator;
+			global::SatelliteMenu.Resource.Animation.popoutMenuItemInRotateInterpolator = global::CodeMasters.FederalSI.Droid.Resource.Animation.popoutMenuItemInRotateInterpolator;
+			global::SatelliteMenu.Resource.Animation.popoutMenuItemOutRotateInterpolator = global::CodeMasters.FederalSI.Droid.Resource.Animation.popoutMenuItemOutRotateInterpolator;
+			global::SatelliteMenu.Resource.Animation.popoutMenuItemOvershootInterpolator = global::CodeMasters.FederalSI.Droid.Resource.Animation.popoutMenuItemOvershootInterpolator;
+			global::SatelliteMenu.Resource.Animation.popoutMenuRotateLeftAnim = global::CodeMasters.FederalSI.Droid.Resource.Animation.popoutMenuRotateLeftAnim;
+			global::SatelliteMenu.Resource.Animation.popoutMenuRotateRight = global::CodeMasters.FederalSI.Droid.Resource.Animation.popoutMenuRotateRight;
+			global::SatelliteMenu.Resource.Attribute.closeOnClick = global::CodeMasters.FederalSI.Droid.Resource.Attribute.closeOnClick;
+			global::SatelliteMenu.Resource.Attribute.itemsAngle = global::CodeMasters.FederalSI.Droid.Resource.Attribute.itemsAngle;
+			global::SatelliteMenu.Resource.Attribute.mainImage = global::CodeMasters.FederalSI.Droid.Resource.Attribute.mainImage;
+			global::SatelliteMenu.Resource.Attribute.radius = global::CodeMasters.FederalSI.Droid.Resource.Attribute.radius;
+			global::SatelliteMenu.Resource.Attribute.speed = global::CodeMasters.FederalSI.Droid.Resource.Attribute.speed;
+			global::SatelliteMenu.Resource.Id.popoutMenuItem = global::CodeMasters.FederalSI.Droid.Resource.Id.popoutMenuItem;
+			global::SatelliteMenu.Resource.Layout.popoutMenuItem = global::CodeMasters.FederalSI.Droid.Resource.Layout.popoutMenuItem;
+			global::SatelliteMenu.Resource.String.empty = global::CodeMasters.FederalSI.Droid.Resource.String.empty;
+			global::SatelliteMenu.Resource.Styleable.SatelliteMenu = global::CodeMasters.FederalSI.Droid.Resource.Styleable.SatelliteMenu;
+			global::SatelliteMenu.Resource.Styleable.SatelliteMenu_closeOnClick = global::CodeMasters.FederalSI.Droid.Resource.Styleable.SatelliteMenu_closeOnClick;
+			global::SatelliteMenu.Resource.Styleable.SatelliteMenu_itemsAngle = global::CodeMasters.FederalSI.Droid.Resource.Styleable.SatelliteMenu_itemsAngle;
+			global::SatelliteMenu.Resource.Styleable.SatelliteMenu_mainImage = global::CodeMasters.FederalSI.Droid.Resource.Styleable.SatelliteMenu_mainImage;
+			global::SatelliteMenu.Resource.Styleable.SatelliteMenu_radius = global::CodeMasters.FederalSI.Droid.Resource.Styleable.SatelliteMenu_radius;
+			global::SatelliteMenu.Resource.Styleable.SatelliteMenu_speed = global::CodeMasters.FederalSI.Droid.Resource.Styleable.SatelliteMenu_speed;
 		}
 		
 		public partial class Animation
@@ -97,6 +119,30 @@ namespace CodeMasters.FederalSI.Droid
 			
 			// aapt resource value: 0x7f040009
 			public const int abc_slide_out_top = 2130968585;
+			
+			// aapt resource value: 0x7f04000a
+			public const int popoutMenuItemAnticipateInterpolator = 2130968586;
+			
+			// aapt resource value: 0x7f04000b
+			public const int popoutMenuItemClickAnim = 2130968587;
+			
+			// aapt resource value: 0x7f04000c
+			public const int popoutMenuItemClickInterpolator = 2130968588;
+			
+			// aapt resource value: 0x7f04000d
+			public const int popoutMenuItemInRotateInterpolator = 2130968589;
+			
+			// aapt resource value: 0x7f04000e
+			public const int popoutMenuItemOutRotateInterpolator = 2130968590;
+			
+			// aapt resource value: 0x7f04000f
+			public const int popoutMenuItemOvershootInterpolator = 2130968591;
+			
+			// aapt resource value: 0x7f040010
+			public const int popoutMenuRotateLeftAnim = 2130968592;
+			
+			// aapt resource value: 0x7f040011
+			public const int popoutMenuRotateRight = 2130968593;
 			
 			static Animation()
 			{
@@ -213,41 +259,41 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f010085
 			public const int activityChooserViewStyle = 2130772101;
 			
-			// aapt resource value: 0x7f0100d1
-			public const int ahBarColor = 2130772177;
-			
-			// aapt resource value: 0x7f0100d9
-			public const int ahBarLength = 2130772185;
-			
-			// aapt resource value: 0x7f0100d8
-			public const int ahBarWidth = 2130772184;
-			
 			// aapt resource value: 0x7f0100d6
-			public const int ahCircleColor = 2130772182;
+			public const int ahBarColor = 2130772182;
 			
-			// aapt resource value: 0x7f0100d5
-			public const int ahDelayMillis = 2130772181;
+			// aapt resource value: 0x7f0100de
+			public const int ahBarLength = 2130772190;
+			
+			// aapt resource value: 0x7f0100dd
+			public const int ahBarWidth = 2130772189;
+			
+			// aapt resource value: 0x7f0100db
+			public const int ahCircleColor = 2130772187;
+			
+			// aapt resource value: 0x7f0100da
+			public const int ahDelayMillis = 2130772186;
+			
+			// aapt resource value: 0x7f0100dc
+			public const int ahRadius = 2130772188;
 			
 			// aapt resource value: 0x7f0100d7
-			public const int ahRadius = 2130772183;
+			public const int ahRimColor = 2130772183;
 			
-			// aapt resource value: 0x7f0100d2
-			public const int ahRimColor = 2130772178;
+			// aapt resource value: 0x7f0100d8
+			public const int ahRimWidth = 2130772184;
+			
+			// aapt resource value: 0x7f0100d9
+			public const int ahSpinSpeed = 2130772185;
 			
 			// aapt resource value: 0x7f0100d3
-			public const int ahRimWidth = 2130772179;
+			public const int ahText = 2130772179;
 			
 			// aapt resource value: 0x7f0100d4
-			public const int ahSpinSpeed = 2130772180;
+			public const int ahTextColor = 2130772180;
 			
-			// aapt resource value: 0x7f0100ce
-			public const int ahText = 2130772174;
-			
-			// aapt resource value: 0x7f0100cf
-			public const int ahTextColor = 2130772175;
-			
-			// aapt resource value: 0x7f0100d0
-			public const int ahTextSize = 2130772176;
+			// aapt resource value: 0x7f0100d5
+			public const int ahTextSize = 2130772181;
 			
 			// aapt resource value: 0x7f0100a8
 			public const int alertDialogButtonGroupStyle = 2130772136;
@@ -335,6 +381,9 @@ namespace CodeMasters.FederalSI.Droid
 			
 			// aapt resource value: 0x7f01001c
 			public const int closeItemLayout = 2130771996;
+			
+			// aapt resource value: 0x7f0100d1
+			public const int closeOnClick = 2130772177;
 			
 			// aapt resource value: 0x7f0100c3
 			public const int collapseContentDescription = 2130772163;
@@ -480,6 +529,9 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f010014
 			public const int itemPadding = 2130771988;
 			
+			// aapt resource value: 0x7f0100cf
+			public const int itemsAngle = 2130772175;
+			
 			// aapt resource value: 0x7f01003a
 			public const int layout = 2130772026;
 			
@@ -518,6 +570,9 @@ namespace CodeMasters.FederalSI.Droid
 			
 			// aapt resource value: 0x7f0100c6
 			public const int logoDescription = 2130772166;
+			
+			// aapt resource value: 0x7f0100d2
+			public const int mainImage = 2130772178;
 			
 			// aapt resource value: 0x7f0100c1
 			public const int maxButtonHeight = 2130772161;
@@ -582,6 +637,9 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f0100b5
 			public const int radioButtonStyle = 2130772149;
 			
+			// aapt resource value: 0x7f0100d0
+			public const int radius = 2130772176;
+			
 			// aapt resource value: 0x7f0100b6
 			public const int ratingBarStyle = 2130772150;
 			
@@ -614,6 +672,9 @@ namespace CodeMasters.FederalSI.Droid
 			
 			// aapt resource value: 0x7f010022
 			public const int singleChoiceItemLayout = 2130772002;
+			
+			// aapt resource value: 0x7f0100ce
+			public const int speed = 2130772174;
 			
 			// aapt resource value: 0x7f010029
 			public const int spinBars = 2130772009;
@@ -1505,31 +1566,49 @@ namespace CodeMasters.FederalSI.Droid
 			public const int abc_textfield_search_material = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int ic_errorstatus = 2130837573;
+			public const int ic_action_lab = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int ic_successstatus = 2130837574;
+			public const int ic_action_news = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int Icon = 2130837575;
+			public const int ic_action_phone_start = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int monoandroidsplash = 2130837576;
-			
-			// aapt resource value: 0x7f02004d
-			public const int notification_template_icon_bg = 2130837581;
+			public const int ic_action_pie_chart = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int roundedbg = 2130837577;
+			public const int ic_action_pin = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int roundedbgdark = 2130837578;
+			public const int ic_errorstatus = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int SolutionItemSelector = 2130837579;
+			public const int ic_successstatus = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int splash_screen = 2130837580;
+			public const int Icon = 2130837580;
+			
+			// aapt resource value: 0x7f02004d
+			public const int menu = 2130837581;
+			
+			// aapt resource value: 0x7f02004e
+			public const int monoandroidsplash = 2130837582;
+			
+			// aapt resource value: 0x7f020053
+			public const int notification_template_icon_bg = 2130837587;
+			
+			// aapt resource value: 0x7f02004f
+			public const int roundedbg = 2130837583;
+			
+			// aapt resource value: 0x7f020050
+			public const int roundedbgdark = 2130837584;
+			
+			// aapt resource value: 0x7f020051
+			public const int SolutionItemSelector = 2130837585;
+			
+			// aapt resource value: 0x7f020052
+			public const int splash_screen = 2130837586;
 			
 			static Drawable()
 			{
@@ -1544,8 +1623,8 @@ namespace CodeMasters.FederalSI.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0061
-			public const int SolName = 2131427425;
+			// aapt resource value: 0x7f0b0062
+			public const int SolName = 2131427426;
 			
 			// aapt resource value: 0x7f0b0054
 			public const int action0 = 2131427412;
@@ -1604,32 +1683,32 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f0b0018
 			public const int beginning = 2131427352;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int btnCode = 2131427430;
-			
-			// aapt resource value: 0x7f0b0069
-			public const int btnDeployment = 2131427433;
-			
-			// aapt resource value: 0x7f0b006d
-			public const int btnKID = 2131427437;
-			
-			// aapt resource value: 0x7f0b006b
-			public const int btnPHM = 2131427435;
-			
-			// aapt resource value: 0x7f0b0064
-			public const int btnProject = 2131427428;
-			
-			// aapt resource value: 0x7f0b0065
-			public const int btnRequirement = 2131427429;
-			
 			// aapt resource value: 0x7f0b0067
-			public const int btnSupport = 2131427431;
-			
-			// aapt resource value: 0x7f0b006e
-			public const int btnTC = 2131427438;
+			public const int btnCode = 2131427431;
 			
 			// aapt resource value: 0x7f0b006a
-			public const int btnTest = 2131427434;
+			public const int btnDeployment = 2131427434;
+			
+			// aapt resource value: 0x7f0b006e
+			public const int btnKID = 2131427438;
+			
+			// aapt resource value: 0x7f0b006c
+			public const int btnPHM = 2131427436;
+			
+			// aapt resource value: 0x7f0b0065
+			public const int btnProject = 2131427429;
+			
+			// aapt resource value: 0x7f0b0066
+			public const int btnRequirement = 2131427430;
+			
+			// aapt resource value: 0x7f0b0068
+			public const int btnSupport = 2131427432;
+			
+			// aapt resource value: 0x7f0b006f
+			public const int btnTC = 2131427439;
+			
+			// aapt resource value: 0x7f0b006b
+			public const int btnTest = 2131427435;
 			
 			// aapt resource value: 0x7f0b002b
 			public const int buttonPanel = 2131427371;
@@ -1679,14 +1758,14 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f0b0038
 			public const int expanded_menu = 2131427384;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int hLinearLayout1 = 2131427427;
+			// aapt resource value: 0x7f0b0064
+			public const int hLinearLayout1 = 2131427428;
 			
-			// aapt resource value: 0x7f0b0068
-			public const int hLinearLayout2 = 2131427432;
+			// aapt resource value: 0x7f0b0069
+			public const int hLinearLayout2 = 2131427433;
 			
-			// aapt resource value: 0x7f0b006c
-			public const int hLinearLayout3 = 2131427436;
+			// aapt resource value: 0x7f0b006d
+			public const int hLinearLayout3 = 2131427437;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int home = 2131427332;
@@ -1715,8 +1794,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int listView1 = 2131427426;
+			// aapt resource value: 0x7f0b0063
+			public const int listView1 = 2131427427;
 			
 			// aapt resource value: 0x7f0b0028
 			public const int list_item = 2131427368;
@@ -1732,6 +1811,9 @@ namespace CodeMasters.FederalSI.Droid
 			
 			// aapt resource value: 0x7f0b0057
 			public const int media_actions = 2131427415;
+			
+			// aapt resource value: 0x7f0b0070
+			public const int menu = 2131427440;
 			
 			// aapt resource value: 0x7f0b001a
 			public const int middle = 2131427354;
@@ -1750,6 +1832,12 @@ namespace CodeMasters.FederalSI.Droid
 			
 			// aapt resource value: 0x7f0b002d
 			public const int parentPanel = 2131427373;
+			
+			// aapt resource value: 0x7f0b0071
+			public const int popoutMenu = 2131427441;
+			
+			// aapt resource value: 0x7f0b0061
+			public const int popoutMenuItem = 2131427425;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int progress_circular = 2131427333;
@@ -2027,22 +2115,28 @@ namespace CodeMasters.FederalSI.Droid
 			public const int notification_template_part_time = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int select_dialog_item_material = 2130903076;
+			public const int popoutMenuItem = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int select_dialog_multichoice_material = 2130903077;
+			public const int select_dialog_item_material = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int select_dialog_singlechoice_material = 2130903078;
+			public const int select_dialog_multichoice_material = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int SolutionItem = 2130903079;
+			public const int select_dialog_singlechoice_material = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int SolutionList = 2130903080;
+			public const int SolutionItem = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int support_simple_spinner_dropdown_item = 2130903081;
+			public const int SolutionList = 2130903081;
+			
+			// aapt resource value: 0x7f03002a
+			public const int SolutionMenu = 2130903082;
+			
+			// aapt resource value: 0x7f03002b
+			public const int support_simple_spinner_dropdown_item = 2130903083;
 			
 			static Layout()
 			{
@@ -2057,11 +2151,11 @@ namespace CodeMasters.FederalSI.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050016
-			public const int ApplicationName = 2131034134;
+			// aapt resource value: 0x7f050017
+			public const int ApplicationName = 2131034135;
 			
-			// aapt resource value: 0x7f050015
-			public const int Hello = 2131034133;
+			// aapt resource value: 0x7f050016
+			public const int Hello = 2131034134;
 			
 			// aapt resource value: 0x7f050000
 			public const int abc_action_bar_home_description = 2131034112;
@@ -2121,7 +2215,10 @@ namespace CodeMasters.FederalSI.Droid
 			public const int abc_toolbar_collapse_description = 2131034130;
 			
 			// aapt resource value: 0x7f050014
-			public const int library_name = 2131034132;
+			public const int empty = 2131034132;
+			
+			// aapt resource value: 0x7f050015
+			public const int library_name = 2131034133;
 			
 			// aapt resource value: 0x7f050013
 			public const int status_bar_notification_info_overflow = 2131034131;
@@ -3548,18 +3645,18 @@ namespace CodeMasters.FederalSI.Droid
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
 			
 			public static int[] ProgressWheel = new int[] {
-					2130772174,
-					2130772175,
-					2130772176,
-					2130772177,
-					2130772178,
 					2130772179,
 					2130772180,
 					2130772181,
 					2130772182,
 					2130772183,
 					2130772184,
-					2130772185};
+					2130772185,
+					2130772186,
+					2130772187,
+					2130772188,
+					2130772189,
+					2130772190};
 			
 			// aapt resource value: 3
 			public const int ProgressWheel_ahBarColor = 3;
@@ -3596,6 +3693,28 @@ namespace CodeMasters.FederalSI.Droid
 			
 			// aapt resource value: 2
 			public const int ProgressWheel_ahTextSize = 2;
+			
+			public static int[] SatelliteMenu = new int[] {
+					2130772174,
+					2130772175,
+					2130772176,
+					2130772177,
+					2130772178};
+			
+			// aapt resource value: 3
+			public const int SatelliteMenu_closeOnClick = 3;
+			
+			// aapt resource value: 1
+			public const int SatelliteMenu_itemsAngle = 1;
+			
+			// aapt resource value: 4
+			public const int SatelliteMenu_mainImage = 4;
+			
+			// aapt resource value: 2
+			public const int SatelliteMenu_radius = 2;
+			
+			// aapt resource value: 0
+			public const int SatelliteMenu_speed = 0;
 			
 			public static int[] SearchView = new int[] {
 					16842970,
