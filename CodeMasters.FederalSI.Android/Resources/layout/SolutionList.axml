@@ -18,73 +18,62 @@
             android:paddingTop="5dp"
             android:dividerHeight="5dp"
             android:divider="#333300" />
+    <!--android:listSelector = "@drawable/listitem_selector"-->
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="47.0dp"
+        android:layout_height="50.0dp"
         android:id="@+id/hLinearLayout1">
         <Button
             android:text="Project"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/btnProject"
-            android:layout_marginLeft="1dp"
-            android:foregroundTint="#0000ffff" />
+            style="@style/defaultButtonStyle" />
         <Button
             android:text="Requirement"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/btnRequirement" />
+            android:id="@+id/btnRequirement"
+            style="@style/defaultButtonStyle" />
         <Button
             android:text="Code"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/btnCode" />
+            android:id="@+id/btnCode"
+            style="@style/defaultButtonStyle" />
         <Button
             android:text="Support"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/btnSupport" />
+            android:id="@+id/btnSupport"
+            style="@style/defaultButtonStyle" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="47.0dp"
+        android:layout_height="50.0dp"
         android:id="@+id/hLinearLayout2"
         android:layout_marginBottom="0.0dp">
         <Button
             android:text="Deployment"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
             android:id="@+id/btnDeployment"
-            android:layout_marginLeft="1dp" />
+            style="@style/defaultButtonStyle" />
         <Button
             android:text="Test"
             android:layout_width="59.5dp"
-            android:layout_height="match_parent"
-            android:id="@+id/btnTest" />
+            android:id="@+id/btnTest"
+            style="@style/defaultButtonStyle" />
         <Button
             android:text="Project Health Metrics"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/btnPHM" />
+            android:id="@+id/btnPHM"
+            style="@style/defaultButtonStyle" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="47.0dp"
+        android:layout_height="50.0dp"
         android:id="@+id/hLinearLayout3">
         <Button
             android:text="Key Impact Deliverables"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
             android:id="@+id/btnKID"
-            android:layout_marginLeft="1dp" />
+            style="@style/defaultButtonStyle" />
         <Button
             android:text="Training / Change"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/btnTC" />
+            android:id="@+id/btnTC"
+            style="@style/defaultButtonStyle" />
     </LinearLayout>
 </LinearLayout>
