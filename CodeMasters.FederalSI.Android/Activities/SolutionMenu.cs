@@ -10,25 +10,31 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SatelliteMenu;
+using CodeMasters.FederalSI.Shared.Model;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
-    [Activity(MainLauncher = true)]
+    [Activity(Label = "Solution Details")]
     class SolutionMenu : Activity
     {
+        Solution currentSolution;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.SolutionMenu);
 
+            string solutionJson = Intent.GetStringExtra("JsonSelectedSolutionString");
+            currentSolution = JsonHelper.Deserialize<Solution>(solutionJson);
+
             var button = FindViewById<SatelliteMenuButton>(Resource.Id.menu);
 
             button.AddItems(new[] {
-        new SatelliteMenuButtonItem ((int)MenuItem.Overview, Resource.Drawable.ic_action_pin),
-        new SatelliteMenuButtonItem ((int)MenuItem.Description, Resource.Drawable.ic_action_news),
-        new SatelliteMenuButtonItem ((int)MenuItem.Contact, Resource.Drawable.ic_action_phone_start),
-        new SatelliteMenuButtonItem ((int)MenuItem.InfoCard, Resource.Drawable.ic_action_lab),
-        new SatelliteMenuButtonItem ((int)MenuItem.Pager, Resource.Drawable.ic_action_pie_chart)});
+                new SatelliteMenuButtonItem ((int)MenuItem.Overview, Resource.Drawable.ic_action_pin),
+                new SatelliteMenuButtonItem ((int)MenuItem.Description, Resource.Drawable.ic_action_news),
+                new SatelliteMenuButtonItem ((int)MenuItem.Contact, Resource.Drawable.ic_action_phone_start),
+                new SatelliteMenuButtonItem ((int)MenuItem.InfoCard, Resource.Drawable.ic_action_lab),
+                new SatelliteMenuButtonItem ((int)MenuItem.Pager, Resource.Drawable.ic_action_pie_chart)});
 
             //button.MenuItemClick += (sender, e) =>
             //{
@@ -40,7 +46,6 @@ namespace CodeMasters.FederalSI.Droid.Activities
 
         public  void MenuClick(object sender, SatelliteMenuItemEventArgs e)
         {
-
             //Load your content here dynamically
             //SetContentView(Resource.Layout.SolutionList);
         }

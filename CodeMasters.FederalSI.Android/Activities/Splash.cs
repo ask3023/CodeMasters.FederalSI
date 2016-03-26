@@ -33,7 +33,7 @@ namespace CodeMasters.FederalSI.Droid
             {
                 // Launch new activity with loaded data
                 var homeScreenIntent = new Intent(this, typeof(SolutionList));
-                string solutionsJson = JsonHelper.SerializeSolutions(previousTask.Result);
+                string solutionsJson = JsonHelper.Serialize<List<Solution>>(previousTask.Result);
                 homeScreenIntent.PutExtra("JsonSolutionsString", solutionsJson);
                 StartActivity(homeScreenIntent);
 

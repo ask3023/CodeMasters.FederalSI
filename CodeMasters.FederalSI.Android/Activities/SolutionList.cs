@@ -12,10 +12,11 @@ using Android.Widget;
 using CodeMasters.FederalSI.Shared.Model;
 using Android.Graphics;
 using CodeMasters.FederalSI.Shared.Service;
+using CodeMasters.FederalSI.Droid.Activities;
 
 namespace CodeMasters.FederalSI.Droid
 {
-    [Activity(Label = "SI Marketplace")]
+    [Activity(Label = "Available Solutions")]
     public class SolutionList : Activity
     {
         ListView solutionListView;
@@ -24,15 +25,15 @@ namespace CodeMasters.FederalSI.Droid
         Color textHighlightColor = new Color(255, 255, 255);
         List<Solution> solutions;
         UIMode currentMode;
+        long selectionItemId;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             string solutionsJson = Intent.GetStringExtra("JsonSolutionsString"); 
 
-            solutions = JsonHelper.DeserializeSolutions(solutionsJson);
+            solutions = JsonHelper.Deserialize<List<Solution>>(solutionsJson);
 
-            // Build the UI
             SetContentView(Resource.Layout.SolutionList);
             solutionListView = FindViewById<ListView>(Resource.Id.listView1);
 
@@ -49,17 +50,16 @@ namespace CodeMasters.FederalSI.Droid
 
             // Subscribe to events
             solutionListView.ItemClick += SolutionListView_ItemClick;
-            solutionListView.ItemSelected += SolutionListView_ItemSelected;
 
-            btnTC.Click += Btn_Click;
-            btnSupport.Click += Btn_Click;
-            btnRequirement.Click += Btn_Click;
-            btnProject.Click += Btn_Click;
-            btnPHM.Click += Btn_Click;
-            btnKID.Click += Btn_Click;
-            btnDeployment.Click += Btn_Click;
-            btnCode.Click += Btn_Click;
-            btnTest.Click += Btn_Click;
+            btnTC.Click += BtnTC_Click;
+            btnSupport.Click += BtnSupport_Click;
+            btnRequirement.Click += BtnRequirement_Click;
+            btnProject.Click += BtnProject_Click;
+            btnPHM.Click += BtnPHM_Click;
+            btnKID.Click += BtnKID_Click;
+            btnDeployment.Click += BtnDeployment_Click;
+            btnCode.Click += BtnCode_Click;
+            btnTest.Click += BtnTest_Click;
 
             solutionListView.ChoiceMode = ChoiceMode.Single;
             solutionListView.Adapter = new SolutionListAdapter(this, solutions);
@@ -67,36 +67,113 @@ namespace CodeMasters.FederalSI.Droid
             currentMode = UIMode.Solution;
         }
 
-        private void Btn_Click(object sender, EventArgs e)
+        #region Button handlers
+
+        private void BtnTest_Click(object sender, EventArgs e)
         {
-            // Clear all buttons
-
-            // Highlight the selected button
-
-            // Get the EVDType
-
-            // Related solutions
-
-            // Update the List with new set of elemets
-
-            // Put the UI in EVD mode
+            Btn_Click(sender, e);
         }
 
-        private void SolutionListView_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        private void BtnCode_Click(object sender, EventArgs e)
         {
-            // throw new NotImplementedException();
+            Btn_Click(sender, e);
+        }
+
+        private void BtnDeployment_Click(object sender, EventArgs e)
+        {
+            Btn_Click(sender, e);
+        }
+
+        private void BtnKID_Click(object sender, EventArgs e)
+        {
+            Btn_Click(sender, e);
+        }
+
+        private void BtnPHM_Click(object sender, EventArgs e)
+        {
+            Btn_Click(sender, e);
+        }
+
+        private void BtnProject_Click(object sender, EventArgs e)
+        {
+            Btn_Click(sender, e);
+        }
+
+        private void BtnRequirement_Click(object sender, EventArgs e)
+        {
+            Btn_Click(sender, e);
+        }
+
+        private void BtnSupport_Click(object sender, EventArgs e)
+        {
+            Btn_Click(sender, e);
+        }
+
+        private void BtnTC_Click(object sender, EventArgs e)
+        {
+            Btn_Click(sender, e);
+        }
+
+        #endregion button handlers
+
+        private void Btn_Click(object sender, EventArgs e)
+        {
+            // Check for mode change
+            if(currentMode == UIMode.Solution)
+            {
+                currentMode = UIMode.EVD;
+                selectionItemId = 0;
+            }
+
+            // Clear all buttons
+            ClearExistingSelection();
+
+            // Highlight the selected button
+            EVDType selectedEvdType = ButtonIdToEvdType(((Button)sender).Id);
+            SelectButton(EvdTypeToButton(selectedEvdType));
+
+            // Related solutions
+            List<Solution> filteredList = solutions.FindAll(s => s.EVDCollection.Exists(evd => evd.Id == (int)selectedEvdType));
+
+            // Update the List with new set of elemets
+            solutionListView.Adapter = new SolutionListAdapter(this, filteredList);
         }
 
         private void SolutionListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            e.View.Selected = true;
+            // Check for mode change
+            if (currentMode == UIMode.EVD)
+            {
+                // Fill the entire list
+                solutionListView.Adapter = new SolutionListAdapter(this, solutions);
 
-            // If the mode change happens fill the list with all solutions
-            // Which list items to select when the mode changes
+                ClearExistingSelection();
 
-            UpdateControlSelections(e.Id);
+                currentMode = UIMode.Solution;
 
-            // Put the UI in solution mode
+                selectionItemId = 0;
+            }
+            else
+            {
+                // If same items is clicked...navigate to details activity
+                if (selectionItemId == e.Id)
+                {
+                    // Launch new activity for Solution details
+                    var solutionDetailIntent = new Intent(this, typeof(SolutionMenu));
+                    Solution selectedSolution = solutions.Find(sol => sol.Id == selectionItemId);
+                    string solutionJson = JsonHelper.Serialize<Solution>(selectedSolution);
+                    solutionDetailIntent.PutExtra("JsonSelectedSolutionString", solutionJson);
+                    StartActivity(solutionDetailIntent);
+                }
+                else
+                {
+                    selectionItemId = e.Id;
+
+                    UpdateControlSelections(e.Id);
+                }
+
+                e.View.Selected = true;
+            }
         }
 
         private void UpdateControlSelections(long itemId)
@@ -109,9 +186,6 @@ namespace CodeMasters.FederalSI.Droid
             {
                 SelectButton(EvdTypeToButton((EVDType)relatedEVD.Id));
             }
-
-            // Maintain the current mode of view (Solution mode or EVD mode)
-            // Based on the mode update the list selection or button highlights
         }
 
         private void ClearExistingSelection()
@@ -178,6 +252,46 @@ namespace CodeMasters.FederalSI.Droid
             }
 
             return matchingButton;
+        }
+
+        private EVDType ButtonIdToEvdType(int buttonId)
+        {
+            EVDType evdType = EVDType.Code;
+
+            switch (buttonId)
+            {
+                case Resource.Id.btnCode:
+                    evdType = EVDType.Code;
+                    break;
+
+                case Resource.Id.btnDeployment:
+                    evdType = EVDType.Deployment;
+                    break;
+                case Resource.Id.btnKID:
+                    evdType = EVDType.KeyImpactDeliverables;
+                    break;
+                case Resource.Id.btnPHM:
+                    evdType = EVDType.ProjectHealthMetrics;
+                    break;
+                case Resource.Id.btnProject:
+                    evdType = EVDType.Project;
+                    break;
+
+                case Resource.Id.btnRequirement:
+                    evdType = EVDType.Requirement;
+                    break;
+                case Resource.Id.btnSupport:
+                    evdType = EVDType.Support;
+                    break;
+                case Resource.Id.btnTC:
+                    evdType = EVDType.TrainingAndChange;
+                    break;
+                case Resource.Id.btnTest:
+                    evdType = EVDType.Test;
+                    break;
+            }
+
+            return evdType;
         }
 
     }
