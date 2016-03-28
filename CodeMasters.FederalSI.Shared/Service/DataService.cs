@@ -175,7 +175,7 @@ namespace CodeMasters.FederalSI.Shared.Service
             EVDItem evdItem = new EVDItem();
             evdItem.Id = (int)evdType;
 
-            switch(evdType)
+            switch (evdType)
             {
                 case EVDType.Project:
                     evdItem.Name = "Project";

@@ -145,6 +145,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_action_pin.png" />
   </ItemGroup>
+  <ItemGroup>  
+      <AndroidResource Include="Resources\drawable\solution1_InfoCard.PNG" />
+    </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\chevron_right.png" />
   </ItemGroup>
