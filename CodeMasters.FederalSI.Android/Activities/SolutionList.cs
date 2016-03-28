@@ -16,7 +16,8 @@ using CodeMasters.FederalSI.Droid.Activities;
 
 namespace CodeMasters.FederalSI.Droid
 {
-    [Activity(Label = "Available Solutions")]
+    [Activity(Label = "Available Solutions" //, Theme = "@style/ListTheme"
+        )]
     public class SolutionList : Activity
     {
         ListView solutionListView;
@@ -26,6 +27,8 @@ namespace CodeMasters.FederalSI.Droid
         List<Solution> solutions;
         UIMode currentMode;
         long selectionItemId;
+        View selectedItemView;
+        SolutionListAdapter listAdapter;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -62,7 +65,8 @@ namespace CodeMasters.FederalSI.Droid
             btnTest.Click += BtnTest_Click;
 
             solutionListView.ChoiceMode = ChoiceMode.Single;
-            solutionListView.Adapter = new SolutionListAdapter(this, solutions);
+            listAdapter = new SolutionListAdapter(this, solutions);
+            solutionListView.Adapter = listAdapter;
 
             currentMode = UIMode.Solution;
         }
@@ -123,6 +127,7 @@ namespace CodeMasters.FederalSI.Droid
             {
                 currentMode = UIMode.EVD;
                 selectionItemId = 0;
+                selectedItemView = null;
             }
 
             // Clear all buttons
@@ -152,6 +157,7 @@ namespace CodeMasters.FederalSI.Droid
                 currentMode = UIMode.Solution;
 
                 selectionItemId = 0;
+                selectedItemView = null;
             }
             else
             {
@@ -167,7 +173,14 @@ namespace CodeMasters.FederalSI.Droid
                 }
                 else
                 {
+                    if(selectedItemView != null)
+                    {
+                        selectedItemView.FindViewById<ImageView>(Resource.Id.listItemImage).Visibility = ViewStates.Invisible;
+                    }
+
                     selectionItemId = e.Id;
+                    selectedItemView = e.View;
+                    selectedItemView.FindViewById<ImageView>(Resource.Id.listItemImage).Visibility = ViewStates.Visible;
 
                     UpdateControlSelections(e.Id);
                 }

@@ -57,6 +57,7 @@ namespace CodeMasters.FederalSI.Droid
 
             convertView.FindViewById<TextView>(Resource.Id.SolName).Text = sol.Name;
             // convertView.FindViewById<TextView>(global::Android.Resource.Id.Text1).Text = sol.Name;
+            convertView.FindViewById<ImageView>(Resource.Id.listItemImage).Visibility = ViewStates.Invisible;
 
             return convertView;
         }
