@@ -10,4 +10,23 @@
     <item name="android:windowBackground">@drawable/splash_screen</item>
     <item name="android:windowNoTitle">true</item>
   </style>
+
+  <style name="defaultButtonStyle" >
+    <item name="android:layout_marginTop">2dp</item>
+    <item name="android:layout_marginRight">2dp</item>
+    <item name="android:layout_marginBottom">2dp</item>
+    <item name="android:layout_marginLeft">2dp</item>
+    <item name="android:paddingLeft">12dp</item>
+    <item name="android:paddingRight">12dp</item>
+    <item name="android:textColor">@color/buttonDefaultTextColor</item>
+    <item name="android:background">@drawable/DefaultButtonBackground</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">match_parent</item>
+  </style>
+
+  <style name="selectedButtonStyle" >
+    <item name="android:backgroundTint">#0000ff</item>
+    <item name="android:textColor">#ffffff</item>
+  </style>
+  
 </resources>

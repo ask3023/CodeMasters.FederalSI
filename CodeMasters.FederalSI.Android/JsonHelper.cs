@@ -16,14 +16,14 @@ namespace CodeMasters.FederalSI.Droid
 {
     public class JsonHelper
     {
-        public static string SerializeSolutions(List<Solution> solutions)
+        public static string Serialize<T>(T obj)
         {
-            return JsonConvert.SerializeObject(solutions);
+            return JsonConvert.SerializeObject(obj);
         }
 
-        public static List<Solution> DeserializeSolutions(string jsonSolutions)
+        public static T Deserialize<T>(string jsonSolutions)
         {
-            return JsonConvert.DeserializeObject<List<Solution>>(jsonSolutions);
+            return JsonConvert.DeserializeObject<T>(jsonSolutions);
         }
     }
 }

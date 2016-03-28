@@ -119,6 +119,9 @@
     <AndroidResource Include="Resources\drawable\SolutionItemSelector.xml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\DefaultButtonBackground.xml" />
+  </ItemGroup>
+  <ItemGroup>
     <XamarinComponentReference Include="satellite-menu">
       <Visible>False</Visible>
       <Version>1.2.1.0</Version>

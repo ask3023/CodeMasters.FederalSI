@@ -6,5 +6,9 @@
   <color name="window_background">#F5F5F5</color>
   <color name="splash_background">#00ff00</color>
   <color name="cellback">#FFDAFF7F</color>
-  <color name="cellbackSelected">#660066</color>
+  <color name="cellbackSelected">#ffffff</color>
+  <color name="buttonHighlightTextColor">#ffffff</color>
+  <color name="buttonDefaultTextColor">#000000</color>
+  <color name="buttonDefaultBackground">#FFDAFF7F</color>
+  <color name="buttonHighlightBackground">#0000ff</color>
 </resources>
