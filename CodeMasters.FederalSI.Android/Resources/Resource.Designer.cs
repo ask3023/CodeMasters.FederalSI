@@ -1595,8 +1595,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f02004e
 			public const int monoandroidsplash = 2130837582;
 			
-			// aapt resource value: 0x7f020053
-			public const int notification_template_icon_bg = 2130837587;
+			// aapt resource value: 0x7f020054
+			public const int notification_template_icon_bg = 2130837588;
 			
 			// aapt resource value: 0x7f02004f
 			public const int roundedbg = 2130837583;
@@ -1605,10 +1605,13 @@ namespace CodeMasters.FederalSI.Droid
 			public const int roundedbgdark = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int SolutionItemSelector = 2130837585;
+			public const int solution1_InfoCard = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int splash_screen = 2130837586;
+			public const int SolutionItemSelector = 2130837586;
+			
+			// aapt resource value: 0x7f020053
+			public const int splash_screen = 2130837587;
 			
 			static Drawable()
 			{
@@ -1743,6 +1746,9 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f0b000c
 			public const int disableHome = 2131427340;
 			
+			// aapt resource value: 0x7f0b0071
+			public const int dynamicImage1 = 2131427441;
+			
 			// aapt resource value: 0x7f0b0043
 			public const int edit_query = 2131427395;
 			
@@ -1812,8 +1818,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f0b0057
 			public const int media_actions = 2131427415;
 			
-			// aapt resource value: 0x7f0b0070
-			public const int menu = 2131427440;
+			// aapt resource value: 0x7f0b0072
+			public const int menu = 2131427442;
 			
 			// aapt resource value: 0x7f0b001a
 			public const int middle = 2131427354;
@@ -1833,8 +1839,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f0b002d
 			public const int parentPanel = 2131427373;
 			
-			// aapt resource value: 0x7f0b0071
-			public const int popoutMenu = 2131427441;
+			// aapt resource value: 0x7f0b0073
+			public const int popoutMenu = 2131427443;
 			
 			// aapt resource value: 0x7f0b0061
 			public const int popoutMenuItem = 2131427425;
@@ -1958,6 +1964,9 @@ namespace CodeMasters.FederalSI.Droid
 			
 			// aapt resource value: 0x7f0b0012
 			public const int useLogo = 2131427346;
+			
+			// aapt resource value: 0x7f0b0070
+			public const int webView1 = 2131427440;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int withText = 2131427359;

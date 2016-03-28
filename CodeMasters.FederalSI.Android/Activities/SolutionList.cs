@@ -34,7 +34,7 @@ namespace CodeMasters.FederalSI.Droid
 
             solutionListView.ItemClick += SolutionListView_ItemClick;
             solutionListView.ItemSelected += SolutionListView_ItemSelected;
-            solutionListView.ItemSelectionCleared += SolutionListView_ItemSelectionCleared;
+            solutionListView.NothingSelected += SolutionListView_ItemSelectionCleared;
 
             solutionListView.SetSelector(Resource.Color.cellbackSelected);
 

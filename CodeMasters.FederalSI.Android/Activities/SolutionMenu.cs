@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SatelliteMenu;
+using System.Net;
+using Android.Webkit;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
@@ -43,6 +45,33 @@ namespace CodeMasters.FederalSI.Droid.Activities
 
             //Load your content here dynamically
             //SetContentView(Resource.Layout.SolutionList);
+
+            var imageView = FindViewById<ImageView>(Resource.Id.dynamicImage1);
+            var webview = FindViewById<WebView>(Resource.Id.webView1);
+
+
+            if (e.MenuItem.Tag == (int)MenuItem.InfoCard) { }
+            {
+                //set visibility
+                webview.Visibility = ViewStates.Invisible;
+                imageView.Visibility = ViewStates.Visible;
+
+                imageView.SetImageResource(Resource.Drawable.solution1_InfoCard);
+            }
+            if (e.MenuItem.Tag == (int)MenuItem.Description)
+            {
+                //set visibility
+                imageView.Visibility = ViewStates.Invisible;
+                webview.Visibility = ViewStates.Visible;
+
+                webview.SetWebChromeClient(new WebChromeClient());
+                webview.Settings.AllowUniversalAccessFromFileURLs = true;
+                webview.Settings.JavaScriptEnabled = true;
+                webview.Settings.AllowContentAccess = true;
+                //leverage browser view
+                webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=http://www2.deloitte.com/content/dam/Deloitte/us/Documents/technology-media-telecommunications/us-tmt-fast500-2014-ranking-list.pdf");
+
+            }
         }
 
         enum MenuItem
