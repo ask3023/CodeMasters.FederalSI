@@ -11,4 +11,5 @@
   <color name="buttonDefaultTextColor">#000000</color>
   <color name="buttonDefaultBackground">#FFDAFF7F</color>
   <color name="buttonHighlightBackground">#0000ff</color>
+  <color name="listWindowBackground">#ffffff</color>
 </resources>

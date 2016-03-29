@@ -15,7 +15,7 @@ using Android.Webkit;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
-    [Activity(MainLauncher = true)]
+    [Activity(Label = "Solution Details")]
     class SolutionMenu : Activity
     {
         protected override void OnCreate(Bundle bundle)
