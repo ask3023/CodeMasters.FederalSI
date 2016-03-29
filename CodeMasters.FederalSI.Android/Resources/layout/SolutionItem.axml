@@ -11,4 +11,11 @@
         android:textColor="#000099"
         android:textSize="20dip"
         android:textStyle="italic" />
+    <ImageView
+        android:id="@+id/listItemImage"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="5dp"
+        android:src="@drawable/chevron_right"
+        android:layout_alignParentRight="true" />
 </RelativeLayout>

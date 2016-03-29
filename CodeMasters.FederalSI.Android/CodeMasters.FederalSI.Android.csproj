@@ -153,6 +153,9 @@
     <AndroidResource Include="Resources\drawable\solution1_InfoCard.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\chevron_right.png" />
+  </ItemGroup>
+  <ItemGroup>
     <AndroidResource Include="Resources\drawable\buttonSave.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

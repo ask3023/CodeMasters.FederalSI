@@ -1,4 +1,8 @@
 ﻿<resources>
+  <style name="ListTheme" parent="@android:style/Theme.Holo.Light">
+    <item name="android:windowBackground">@color/listWindowBackground</item>
+  </style>
+  
   <style name="SITheme.Base" parent="Theme.AppCompat.Light">
   </style>
 
