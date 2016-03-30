@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
-    [Activity(MainLauncher = true,Label = "AddNewSolution")]
+    [Activity(MainLauncher = true,Label = "Add New Solution")]
     public class AddNewSolution : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -23,7 +23,7 @@ namespace CodeMasters.FederalSI.Droid.Activities
             Button button = FindViewById<Button>(Resource.Id.button);
 
             button.Click += (o, e) => {
-                Toast.MakeText(this, "Beep Boop", ToastLength.Short).Show();
+                Toast.MakeText(this, "New Solution added Successfully.", ToastLength.Short).Show();
             };
         }
     }
