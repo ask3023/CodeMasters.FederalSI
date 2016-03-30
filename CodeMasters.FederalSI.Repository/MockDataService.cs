@@ -1,57 +1,41 @@
-﻿using CodeMasters.FederalSI.Shared.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeMasters.FederalSI.Shared.Service
+namespace CodeMasters.FederalSI.Repository
 {
-    public class DataService
+    public class MockDataService
     {
-        public List<Solution> GetSolutions()
+        public List<SolutionMock> BuildSolutions()
         {
-            Task<List<Solution>> solutions = GetSolutionsFromAPI();
-            var retSolutions = solutions.Result;
-            // var retSolutions = this.BuildSolutions();
-
-            return retSolutions;
-        }
-
-        private async Task<List<Solution>> GetSolutionsFromAPI()
-        {
-            string apiUrl = "http://federalsi.azurewebsites.net/api/solution";
-            // string apiUrl = "http://23.96.103.159:80/api/solution";
-
-            HttpClient client = new HttpClient();
-            client.DefaultRequestHeaders.Add("Accept", "application/json");
-            
-            HttpResponseMessage response = await client.GetAsync(apiUrl);
-
-            string solutionJson = await response.Content.ReadAsStringAsync();
-
-            var solutions = JsonHelper.Deserialize<List<Solution>>(solutionJson);
-
-            return solutions;
-        }
-
-        private List<Solution> BuildSolutions()
-        {
-            List<Solution> solutions = new List<Solution>();
-            Solution dConnect = new Solution()
+            List<SolutionMock> solutions = new List<SolutionMock>();
+            SolutionMock dConnect = new SolutionMock()
             {
                 Id = 2,
-                Name = "DConnect"
+                Name = "DConnect",
+                DetailedDescription = "Details descrition about the solution...Issue to impact",
+                Overview = "Basic description of the solution",
+                PagerUrl = "",
+                InfoCardUrl = ""
             };
+
             dConnect.EVDCollection.Add(BuildEVDItem(EVDType.Code));
             dConnect.EVDCollection.Add(BuildEVDItem(EVDType.Test));
             dConnect.EVDCollection.Add(BuildEVDItem(EVDType.Requirement));
             dConnect.EVDCollection.Add(BuildEVDItem(EVDType.Deployment));
 
+            dConnect.Contacts.Add(new Pointofcontact() {
+                Name = "John Madden",
+                Designation = "Senior Solution Architect",
+                Description = "Champion in DConnect",
+                Email = "John.Madden@deloitt.com"
+            } );
+
             solutions.Add(dConnect);
 
-            Solution dotAgile = new Solution()
+            SolutionMock dotAgile = new SolutionMock()
             {
                 Id = 1,
                 Name = "DotAgile"
@@ -65,7 +49,7 @@ namespace CodeMasters.FederalSI.Shared.Service
             solutions.Add(dotAgile);
 
 
-            Solution legacyModernization = new Solution()
+            SolutionMock legacyModernization = new SolutionMock()
             {
                 Id = 4,
                 Name = "Legacy Modernization"
@@ -79,7 +63,7 @@ namespace CodeMasters.FederalSI.Shared.Service
             solutions.Add(legacyModernization);
 
 
-            Solution solution01 = new Solution()
+            SolutionMock solution01 = new SolutionMock()
             {
                 Id = 3,
                 Name = "Solution01"
@@ -92,7 +76,7 @@ namespace CodeMasters.FederalSI.Shared.Service
 
             solutions.Add(solution01);
 
-            Solution solution02 = new Solution()
+            SolutionMock solution02 = new SolutionMock()
             {
                 Id = 5,
                 Name = "Solution02"
@@ -106,7 +90,7 @@ namespace CodeMasters.FederalSI.Shared.Service
 
             solutions.Add(solution02);
 
-            Solution solution03 = new Solution()
+            SolutionMock solution03 = new SolutionMock()
             {
                 Id = 6,
                 Name = "Solution03"
@@ -120,7 +104,7 @@ namespace CodeMasters.FederalSI.Shared.Service
             solutions.Add(solution03);
 
 
-            Solution solution04 = new Solution()
+            SolutionMock solution04 = new SolutionMock()
             {
                 Id = 7,
                 Name = "Solution04"
@@ -133,7 +117,7 @@ namespace CodeMasters.FederalSI.Shared.Service
             solutions.Add(solution04);
 
 
-            Solution solution05 = new Solution()
+            SolutionMock solution05 = new SolutionMock()
             {
                 Id = 8,
                 Name = "Solution05"
@@ -148,7 +132,7 @@ namespace CodeMasters.FederalSI.Shared.Service
 
             solutions.Add(solution05);
 
-            Solution solution06 = new Solution()
+            SolutionMock solution06 = new SolutionMock()
             {
                 Id = 9,
                 Name = "Solution06"
@@ -161,7 +145,7 @@ namespace CodeMasters.FederalSI.Shared.Service
 
             solutions.Add(solution06);
 
-            Solution solution07 = new Solution()
+            SolutionMock solution07 = new SolutionMock()
             {
                 Id = 10,
                 Name = "Solution07"
@@ -173,7 +157,7 @@ namespace CodeMasters.FederalSI.Shared.Service
 
             solutions.Add(solution07);
 
-            Solution solution08 = new Solution()
+            SolutionMock solution08 = new SolutionMock()
             {
                 Id = 11,
                 Name = "Solution08"
@@ -190,7 +174,7 @@ namespace CodeMasters.FederalSI.Shared.Service
             return solutions;
         }
 
-        private EVDItem BuildEVDItem(EVDType evdType)
+        public EVDItem BuildEVDItem(EVDType evdType)
         {
             EVDItem evdItem = new EVDItem();
             evdItem.Id = (int)evdType;
@@ -246,6 +230,53 @@ namespace CodeMasters.FederalSI.Shared.Service
 
             return evdItem;
         }
+    }
+
+    public class SolutionMock
+    {
+        public SolutionMock()
+        {
+            this.EVDCollection = new List<EVDItem>();
+            this.Contacts = new List<Pointofcontact>();
+        }
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        public string Overview { get; set; }
+
+        // Contain issue to impact or any other text related to solution
+        public string DetailedDescription { get; set; }
+
+        public List<Pointofcontact> Contacts { get; set; }
+
+        public string InfoCardUrl { get; set; }
+
+        public string PagerUrl { get; set; }
+
+        public List<EVDItem> EVDCollection { get; private set; }
+    }
+
+    public class Pointofcontact
+    {
+        public string Name { get; set; }
+
+        public string Designation { get; set; }
+
+        public string Email { get; set; }
+
+        public string Description { get; set; }
+
+        // Image URL ???
+    }
+
+    public class EVDItem
+    {
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        public string Description { get; set; }
     }
 
     public enum EVDType

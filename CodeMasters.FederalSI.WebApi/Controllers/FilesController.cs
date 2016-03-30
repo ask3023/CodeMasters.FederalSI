@@ -22,12 +22,12 @@ namespace CodeMasters.FederalSI.WebApi.Controllers
 
             HttpResponseMessage result = new HttpResponseMessage(HttpStatusCode.OK);
 
-            var document = new SolutionController().GetByName(solution);
-            var stream = document.GetFileByTitle(solution ,title);
-            //if (stream != null)
-            //{
-                result.Content = new StreamContent(stream);
-                result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/pdf");
+            //var document = new SolutionController().GetByName(solution);
+            //var stream = document.GetFileByTitle(solution ,title);
+            ////if (stream != null)
+            ////{
+            //    result.Content = new StreamContent(stream);
+            //    result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/pdf");
                 //result.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
                 //result.Content.Headers.ContentDisposition.FileName = title;
                 return result;

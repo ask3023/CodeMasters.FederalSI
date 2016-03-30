@@ -3,16 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using CodeMasters.FederalSI.Shared.Model;
 using Newtonsoft.Json;
 
-namespace CodeMasters.FederalSI.Droid
+namespace CodeMasters.FederalSI.Shared.Service
 {
     public class JsonHelper
     {

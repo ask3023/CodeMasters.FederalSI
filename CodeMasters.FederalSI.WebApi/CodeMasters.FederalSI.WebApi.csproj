@@ -126,7 +126,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="App_Data\1\pager.pdf" />
     <None Include="Properties\PublishProfiles\CodeMasters.pubxml" />
+    <None Include="Properties\PublishProfiles\FederalSI %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\FederalSI.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -135,7 +138,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

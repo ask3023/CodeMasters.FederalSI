@@ -69,8 +69,10 @@ namespace CodeMasters.FederalSI.Droid.Activities
                 webview.Settings.JavaScriptEnabled = true;
                 webview.Settings.AllowContentAccess = true;
                 //leverage browser view
-                webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=http://www2.deloitte.com/content/dam/Deloitte/us/Documents/technology-media-telecommunications/us-tmt-fast500-2014-ranking-list.pdf");
-
+                // webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=http://www2.deloitte.com/content/dam/Deloitte/us/Documents/technology-media-telecommunications/us-tmt-fast500-2014-ranking-list.pdf");
+                // webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=https://childcare.dhss.delaware.gov/api/userGuides/pdf");
+                // TODO: URL needs to be replaced with Solution.PagerUrl property
+                webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=http://federalsi.azurewebsites.net/api/solution/1/pager");
             }
         }
 
