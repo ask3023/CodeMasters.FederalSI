@@ -876,32 +876,32 @@ namespace CodeMasters.FederalSI.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0a004b
-			public const int abc_background_cache_hint_selector_material_dark = 2131361867;
-			
 			// aapt resource value: 0x7f0a004c
-			public const int abc_background_cache_hint_selector_material_light = 2131361868;
+			public const int abc_background_cache_hint_selector_material_dark = 2131361868;
 			
 			// aapt resource value: 0x7f0a004d
-			public const int abc_color_highlight_material = 2131361869;
+			public const int abc_background_cache_hint_selector_material_light = 2131361869;
+			
+			// aapt resource value: 0x7f0a004e
+			public const int abc_color_highlight_material = 2131361870;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int abc_input_method_navigation_guard = 2131361792;
 			
-			// aapt resource value: 0x7f0a004e
-			public const int abc_primary_text_disable_only_material_dark = 2131361870;
-			
 			// aapt resource value: 0x7f0a004f
-			public const int abc_primary_text_disable_only_material_light = 2131361871;
+			public const int abc_primary_text_disable_only_material_dark = 2131361871;
 			
 			// aapt resource value: 0x7f0a0050
-			public const int abc_primary_text_material_dark = 2131361872;
+			public const int abc_primary_text_disable_only_material_light = 2131361872;
 			
 			// aapt resource value: 0x7f0a0051
-			public const int abc_primary_text_material_light = 2131361873;
+			public const int abc_primary_text_material_dark = 2131361873;
 			
 			// aapt resource value: 0x7f0a0052
-			public const int abc_search_url_text = 2131361874;
+			public const int abc_primary_text_material_light = 2131361874;
+			
+			// aapt resource value: 0x7f0a0053
+			public const int abc_search_url_text = 2131361875;
 			
 			// aapt resource value: 0x7f0a0001
 			public const int abc_search_url_text_normal = 2131361793;
@@ -912,11 +912,11 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f0a0003
 			public const int abc_search_url_text_selected = 2131361795;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int abc_secondary_text_material_dark = 2131361875;
-			
 			// aapt resource value: 0x7f0a0054
-			public const int abc_secondary_text_material_light = 2131361876;
+			public const int abc_secondary_text_material_dark = 2131361876;
+			
+			// aapt resource value: 0x7f0a0055
+			public const int abc_secondary_text_material_light = 2131361877;
 			
 			// aapt resource value: 0x7f0a003c
 			public const int accent = 2131361852;
@@ -1122,17 +1122,20 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f0a0037
 			public const int switch_thumb_disabled_material_light = 2131361847;
 			
-			// aapt resource value: 0x7f0a0055
-			public const int switch_thumb_material_dark = 2131361877;
-			
 			// aapt resource value: 0x7f0a0056
-			public const int switch_thumb_material_light = 2131361878;
+			public const int switch_thumb_material_dark = 2131361878;
+			
+			// aapt resource value: 0x7f0a0057
+			public const int switch_thumb_material_light = 2131361879;
 			
 			// aapt resource value: 0x7f0a0038
 			public const int switch_thumb_normal_material_dark = 2131361848;
 			
 			// aapt resource value: 0x7f0a0039
 			public const int switch_thumb_normal_material_light = 2131361849;
+			
+			// aapt resource value: 0x7f0a004b
+			public const int theme_devicedefault_background = 2131361867;
 			
 			// aapt resource value: 0x7f0a003d
 			public const int window_background = 2131361853;
@@ -1605,37 +1608,37 @@ namespace CodeMasters.FederalSI.Droid
 			public const int DefaultButtonBackground = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int ellipsis = 2130837576;
+			public const int federal_si_cancel = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int federal_si_cancel = 2130837577;
+			public const int federal_si_save = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int federal_si_save = 2130837578;
+			public const int ic_action_lab = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int ic_action_lab = 2130837579;
+			public const int ic_action_news = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int ic_action_news = 2130837580;
+			public const int ic_action_phone_start = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int ic_action_phone_start = 2130837581;
+			public const int ic_action_pie_chart = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int ic_action_pie_chart = 2130837582;
+			public const int ic_action_pin = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int ic_action_pin = 2130837583;
+			public const int ic_errorstatus = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int ic_errorstatus = 2130837584;
+			public const int ic_successstatus = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_successstatus = 2130837585;
+			public const int Icon = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int Icon = 2130837586;
+			public const int loadinganimated = 2130837586;
 			
 			// aapt resource value: 0x7f020053
 			public const int menu = 2130837587;
@@ -3042,6 +3045,9 @@ namespace CodeMasters.FederalSI.Droid
 			
 			// aapt resource value: 0x7f0800e9
 			public const int Theme_AppCompat_NoActionBar = 2131230953;
+			
+			// aapt resource value: 0x7f08013a
+			public const int Theme_FederalSITheme = 2131231034;
 			
 			// aapt resource value: 0x7f0800ea
 			public const int ThemeOverlay_AppCompat = 2131230954;
