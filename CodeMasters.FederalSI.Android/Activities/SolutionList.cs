@@ -16,13 +16,13 @@ using CodeMasters.FederalSI.Droid.Activities;
 
 namespace CodeMasters.FederalSI.Droid
 {
-    [Activity(Label = "Available Solutions" //, Theme = "@style/ListTheme"
-        )]
+    [Activity(Label = "Available Solutions" , //, Theme = "@style/ListTheme"
+        Icon = "@drawable/solution")]
     public class SolutionList : Activity
     {
         ListView solutionListView;
         Button btnTC, btnTest, btnSupport, btnCode, btnProject, btnPHM, btnRequirement, btnDeployment, btnKID;
-        Color textDefaultColor = new Color(0, 0, 0);
+        Color textDefaultColor = new Color(0, 153, 255);
         Color textHighlightColor = new Color(255, 255, 255);
         List<Solution> solutions;
         UIMode currentMode;
@@ -176,11 +176,13 @@ namespace CodeMasters.FederalSI.Droid
                     if(selectedItemView != null)
                     {
                         selectedItemView.FindViewById<ImageView>(Resource.Id.listItemImage).Visibility = ViewStates.Invisible;
+                        selectedItemView.FindViewById<TextView>(Resource.Id.SolName).SetTextColor(textDefaultColor);
                     }
 
                     selectionItemId = e.Id;
                     selectedItemView = e.View;
                     selectedItemView.FindViewById<ImageView>(Resource.Id.listItemImage).Visibility = ViewStates.Visible;
+                    selectedItemView.FindViewById<TextView>(Resource.Id.SolName).SetTextColor(textHighlightColor);
 
                     UpdateControlSelections(e.Id);
                 }

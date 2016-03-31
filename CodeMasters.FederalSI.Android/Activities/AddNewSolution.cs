@@ -12,7 +12,8 @@ using Android.Widget;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
-    [Activity(MainLauncher = true,Label = "Add New Solution")]
+    [Activity(//MainLauncher = true,
+        Label = "Add New Solution")]
     public class AddNewSolution : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

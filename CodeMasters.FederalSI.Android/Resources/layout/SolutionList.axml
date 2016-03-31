@@ -28,7 +28,8 @@
         <Button
             android:text="Project"
             android:id="@+id/btnProject"
-            style="@style/defaultButtonStyle" />
+            style="@style/defaultButtonStyle"
+            android:layout_marginLeft="8dp" />
         <Button
             android:text="Requirement"
             android:id="@+id/btnRequirement"
@@ -70,7 +71,8 @@
         <Button
             android:text="Key Impact Deliverables"
             android:id="@+id/btnKID"
-            style="@style/defaultButtonStyle" />
+            style="@style/defaultButtonStyle"
+            android:layout_marginLeft="4dp" />
         <Button
             android:text="Training / Change"
             android:id="@+id/btnTC"
