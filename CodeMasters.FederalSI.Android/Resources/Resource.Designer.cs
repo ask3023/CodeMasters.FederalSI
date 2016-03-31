@@ -2761,11 +2761,14 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f080073
 			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131230835;
 			
+			// aapt resource value: 0x7f080137
+			public const int FederalSITheme = 2131231031;
+			
 			// aapt resource value: 0x7f080133
 			public const int ListTheme = 2131231027;
 			
-			// aapt resource value: 0x7f080139
-			public const int Mono_Android_Theme_Splash = 2131231033;
+			// aapt resource value: 0x7f08013a
+			public const int Mono_Android_Theme_Splash = 2131231034;
 			
 			// aapt resource value: 0x7f080010
 			public const int Platform_AppCompat = 2131230736;
@@ -3046,8 +3049,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f0800e9
 			public const int Theme_AppCompat_NoActionBar = 2131230953;
 			
-			// aapt resource value: 0x7f08013a
-			public const int Theme_FederalSITheme = 2131231034;
+			// aapt resource value: 0x7f08013b
+			public const int Theme_FederalSITheme = 2131231035;
 			
 			// aapt resource value: 0x7f0800ea
 			public const int ThemeOverlay_AppCompat = 2131230954;
@@ -3268,11 +3271,11 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f080132
 			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131231026;
 			
-			// aapt resource value: 0x7f080137
-			public const int defaultButtonStyle = 2131231031;
-			
 			// aapt resource value: 0x7f080138
-			public const int selectedButtonStyle = 2131231032;
+			public const int defaultButtonStyle = 2131231032;
+			
+			// aapt resource value: 0x7f080139
+			public const int selectedButtonStyle = 2131231033;
 			
 			static Style()
 			{

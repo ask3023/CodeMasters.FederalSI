@@ -15,7 +15,7 @@ using Android.Webkit;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
-    [Activity(Label = "Solution Details", Icon = "@drawable/loadinganimated")]
+    [Activity(Label = "Solution Details", Icon = "@drawable/loadinganimated", Theme = "@style/FederalSITheme")]
     class SolutionMenu : Activity
     {
         protected override void OnCreate(Bundle bundle)
