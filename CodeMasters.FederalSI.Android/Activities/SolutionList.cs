@@ -16,8 +16,8 @@ using CodeMasters.FederalSI.Droid.Activities;
 
 namespace CodeMasters.FederalSI.Droid
 {
-    [Activity(Label = "Available Solutions", Icon = "@drawable/loadinganimated", Theme = "@style/FederalSITheme" //, Theme = "@style/ListTheme"
-        Icon = "@drawable/solution")]
+    [Activity(Label = "Available Solutions", Icon = "@drawable/solution" //, Theme = "@style/FederalSITheme"
+        )]  //, Theme = "@style/ListTheme"
     public class SolutionList : Activity
     {
         ListView solutionListView;

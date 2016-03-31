@@ -52,7 +52,10 @@
         <Button
             android:text="Deployment"
             android:id="@+id/btnDeployment"
-            style="@style/defaultButtonStyle" />
+            style="@style/defaultButtonStyle"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="4dp" />
         <Button
             android:text="Test"
             android:layout_width="59.5dp"
