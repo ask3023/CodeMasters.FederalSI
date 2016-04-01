@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
-    [Activity(MainLauncher = true,Label = "Add New Solution",
+    [Activity(Label = "Add New Solution",
         Icon = "@drawable/loadinganimated", Theme = "@style/FederalSITheme")]
     public class AddNewSolution : Activity
     {
