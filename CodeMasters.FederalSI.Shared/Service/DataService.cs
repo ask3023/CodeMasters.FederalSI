@@ -56,6 +56,11 @@ namespace CodeMasters.FederalSI.Shared.Service
                 Id = 1,
                 Name = "DotAgile"
             };
+
+            dotAgile.Contacts.Add(new Pointofcontact { Name = "Brian Breit", Email = @"bbreit@deloitte.com", Designation = "Partner" });
+            dotAgile.Contacts.Add(new Pointofcontact { Name = "Azunna Anyanwu", Email = @"aanyanwu@deloitte.com", Designation = "Manager" });
+            dotAgile.Contacts.Add(new Pointofcontact { Name = "Jason Bowers", Email = @"Jbowers@deloitte.com", Designation = "Director" });
+
             dotAgile.EVDCollection.Add(BuildEVDItem(EVDType.Project));
             dotAgile.EVDCollection.Add(BuildEVDItem(EVDType.Code));
             dotAgile.EVDCollection.Add(BuildEVDItem(EVDType.Test));

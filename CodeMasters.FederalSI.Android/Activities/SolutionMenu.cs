@@ -12,10 +12,11 @@ using Android.Widget;
 using SatelliteMenu;
 using System.Net;
 using Android.Webkit;
+using Android.Support.V7.Widget;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
-    [Activity(Label = "Solution Details", Icon = "@drawable/loadinganimated", Theme = "@style/FederalSITheme")]
+    [Activity(Label = "Dot Agile", MainLauncher = true, Icon = "@drawable/loadinganimated", Theme = "@style/FederalSITheme")]
     class SolutionMenu : Activity
     {
         protected override void OnCreate(Bundle bundle)
@@ -32,28 +33,48 @@ namespace CodeMasters.FederalSI.Droid.Activities
         new SatelliteMenuButtonItem ((int)MenuItem.InfoCard, Resource.Drawable.ic_action_lab),
         new SatelliteMenuButtonItem ((int)MenuItem.Pager, Resource.Drawable.ic_action_pie_chart)});
 
-            //button.MenuItemClick += (sender, e) =>
-            //{
-            //    Console.WriteLine("{0} selected", e.MenuItem);
-            //};
-
             button.MenuItemClick += MenuClick;
+
         }
 
         public  void MenuClick(object sender, SatelliteMenuItemEventArgs e)
         {
 
             //Load your content here dynamically
-            //SetContentView(Resource.Layout.SolutionList);
 
+            
+         
             var imageView = FindViewById<ImageView>(Resource.Id.dynamicImage1);
             var webview = FindViewById<WebView>(Resource.Id.webView1);
+            var cardview = FindViewById<CardView>(Resource.Id.card_view);
+
+            webview.Visibility = ViewStates.Invisible;
+            imageView.Visibility = ViewStates.Invisible;
+            cardview.Visibility = ViewStates.Invisible;
 
 
-            if (e.MenuItem.Tag == (int)MenuItem.InfoCard) { }
+            if (e.MenuItem.Tag == (int)MenuItem.Contact)
             {
                 //set visibility
-                webview.Visibility = ViewStates.Invisible;
+                cardview.Visibility = ViewStates.Visible;
+
+                var person_photo = FindViewById<ImageView>(Resource.Id.person_photo);
+                person_photo.SetImageResource(Resource.Drawable.BrianBreit);
+
+                var person_name = FindViewById<TextView>(Resource.Id.person_name);
+                person_name.Text = "Brian Breit";
+
+                var person_email = FindViewById<TextView>(Resource.Id.person_email);
+                person_email.Text = @"bbreit@deloitte.com";
+
+                var person_description = FindViewById<TextView>(Resource.Id.person_description);
+                person_description.Text = "Leads the Federal System Development capability, with 20+ years of experience focusing on large technology-enabled business transformations across Financial Services and Health-related clients in Federal, State, and Commercial.";
+
+            }
+
+            if (e.MenuItem.Tag == (int)MenuItem.InfoCard)
+            {
+                //set visibility
                 imageView.Visibility = ViewStates.Visible;
 
                 imageView.SetImageResource(Resource.Drawable.solution1_InfoCard);
@@ -61,7 +82,6 @@ namespace CodeMasters.FederalSI.Droid.Activities
             if (e.MenuItem.Tag == (int)MenuItem.Description)
             {
                 //set visibility
-                imageView.Visibility = ViewStates.Invisible;
                 webview.Visibility = ViewStates.Visible;
 
                 webview.SetWebChromeClient(new WebChromeClient());
@@ -69,8 +89,6 @@ namespace CodeMasters.FederalSI.Droid.Activities
                 webview.Settings.JavaScriptEnabled = true;
                 webview.Settings.AllowContentAccess = true;
                 //leverage browser view
-                // webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=http://www2.deloitte.com/content/dam/Deloitte/us/Documents/technology-media-telecommunications/us-tmt-fast500-2014-ranking-list.pdf");
-                // webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=https://childcare.dhss.delaware.gov/api/userGuides/pdf");
                 // TODO: URL needs to be replaced with Solution.PagerUrl property
                 webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=http://federalsi.azurewebsites.net/api/solution/1/pager");
             }

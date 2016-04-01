@@ -41,6 +41,6 @@ namespace CodeMasters.FederalSI.Shared.Model
 
         public string Description { get; set; }
 
-        // Image URL ???
+        public string ImageURL { get; set; }
     }
 }
