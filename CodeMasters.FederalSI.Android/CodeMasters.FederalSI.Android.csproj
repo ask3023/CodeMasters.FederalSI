@@ -68,12 +68,17 @@
       <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.23.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.23.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\AddNewSolution.cs" />
     <Compile Include="Activities\SolutionList.cs" />
     <Compile Include="Activities\SolutionMenu.cs" />
     <Compile Include="Activities\Splash.cs" />
+    <Compile Include="Adapters\ContactsAdapter.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Adapters\SolutionListAdapter.cs" />
@@ -95,6 +100,12 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AddNewSolution.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Recycler.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ContactCard.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -139,6 +150,10 @@
       <Visible>False</Visible>
       <Version>23.1.1.1</Version>
     </XamarinComponentReference>
+    <XamarinComponentReference Include="xamandroidsupportv7recyclerview">
+      <Visible>False</Visible>
+      <Version>23.1.1.1</Version>
+    </XamarinComponentReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\menu.png" />
@@ -178,6 +193,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\BrianBreit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\AzunnaAnyanwu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\JasonBowers.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
