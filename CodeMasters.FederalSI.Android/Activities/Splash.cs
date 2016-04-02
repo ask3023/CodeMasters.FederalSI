@@ -46,9 +46,6 @@ namespace CodeMasters.FederalSI.Droid
         {
             DataService service = new DataService();
             List<Solution> solutions = service.GetSolutions();
-            // TODO: just to simulate delay of data retrieval
-            Thread.Sleep(5000);
-
             return solutions;
         }
     }
