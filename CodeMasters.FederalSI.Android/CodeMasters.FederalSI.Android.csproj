@@ -102,6 +102,9 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\MenuCustomLayout.axml" />
     <AndroidResource Include="Resources\layout\SolutionHome.axml" />
+    <AndroidResource Include="Resources\menu\SolutionListMenu.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -198,6 +201,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\newSolution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_action_add.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

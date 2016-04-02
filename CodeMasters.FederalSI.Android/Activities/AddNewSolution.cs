@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System.Threading;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
@@ -21,10 +22,17 @@ namespace CodeMasters.FederalSI.Droid.Activities
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.AddNewSolution);
             // Create your application here
-            Button button = FindViewById<Button>(Resource.Id.button);
+            Button addButton = FindViewById<Button>(Resource.Id.button);
+            Button cancelButton = FindViewById<Button>(Resource.Id.buttonCancel);
 
-            button.Click += (o, e) => {
+            addButton.Click += (o, e) => {
                 Toast.MakeText(this, "New Solution added Successfully.", ToastLength.Short).Show();
+                this.Finish();
+            };
+
+            cancelButton.Click += (o, e) =>
+            {
+                this.Finish();
             };
         }
     }
