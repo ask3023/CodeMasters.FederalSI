@@ -14,7 +14,7 @@ using System.Threading;
 
 namespace CodeMasters.FederalSI.Droid
 {
-    [Activity(Label = "SIMarketplace.Android", MainLauncher = true,Icon = "@drawable/loadinganimated",
+    [Activity(Label = "", MainLauncher = true,Icon = "@drawable/loadinganimated",
                 NoHistory=true,
                 Theme = "@style/FederalSITheme")]
     public class Splash : Activity
@@ -46,6 +46,9 @@ namespace CodeMasters.FederalSI.Droid
         {
             DataService service = new DataService();
             List<Solution> solutions = service.GetSolutions();
+            // TODO: just to simulate delay of data retrieval
+            Thread.Sleep(5000);
+
             return solutions;
         }
     }

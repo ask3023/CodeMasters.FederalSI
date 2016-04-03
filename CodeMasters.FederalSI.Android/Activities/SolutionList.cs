@@ -16,7 +16,7 @@ using CodeMasters.FederalSI.Droid.Activities;
 
 namespace CodeMasters.FederalSI.Droid
 {
-    [Activity(Label = "Available Solutions", Icon = "@drawable/solution" //, Theme = "@style/FederalSITheme"
+    [Activity(Label = "Available Solutions", Icon = "@drawable/solution" , Theme = "@style/FederalSITheme"
         )]  //, Theme = "@style/ListTheme"
     public class SolutionList : Activity
     {
@@ -79,7 +79,7 @@ namespace CodeMasters.FederalSI.Droid
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
-            if(item.ItemId == Resource.Id.menu_add)
+            if (item.ItemId == Resource.Id.menu_add)
             {
                 // Show Add solution screen
                 var addNewSolutionIntent = new Intent(this, typeof(AddNewSolution));

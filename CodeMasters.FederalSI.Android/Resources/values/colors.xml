@@ -17,4 +17,5 @@
   <color name="green">#77D065</color>
   <color name="purple">#B455B6</color>
   <color name="gray">#738182</color>
+  <color name="textboxBackground">#ffffff</color>
 </resources>

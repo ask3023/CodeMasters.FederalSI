@@ -46,6 +46,11 @@ namespace CodeMasters.FederalSI.Repository
             dotAgile.EVDCollection.Add(BuildEVDItem(EVDType.Requirement));
             dotAgile.EVDCollection.Add(BuildEVDItem(EVDType.Deployment));
 
+            dotAgile.Contacts.Add(new Pointofcontact { Name = "Brian Breit", Email = @"bbreit@deloitte.com", Designation = "Partner" });
+            dotAgile.Contacts.Add(new Pointofcontact { Name = "Azunna Anyanwu", Email = @"aanyanwu@deloitte.com", Designation = "Manager" });
+            dotAgile.Contacts.Add(new Pointofcontact { Name = "Jason Bowers", Email = @"Jbowers@deloitte.com", Designation = "Director" });
+
+
             solutions.Add(dotAgile);
 
 
