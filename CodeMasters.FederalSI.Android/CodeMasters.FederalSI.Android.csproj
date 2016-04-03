@@ -75,9 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\AddNewSolution.cs" />
+    <Compile Include="Activities\SolutionHome.cs" />
     <Compile Include="Activities\SolutionList.cs" />
     <Compile Include="Activities\SolutionMenu.cs" />
     <Compile Include="Activities\Splash.cs" />
+    <Compile Include="Adapters\GestureListener.cs" />
+    <Compile Include="Adapters\MenuListAdapterClass.cs" />
     <Compile Include="Adapters\ContactsAdapter.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,6 +103,11 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AddNewSolution.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MenuCustomLayout.axml" />
+    <AndroidResource Include="Resources\layout\SolutionHome.axml" />
+    <AndroidResource Include="Resources\menu\SolutionListMenu.xml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Recycler.axml">
@@ -193,6 +201,24 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\BrianBreit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_contactus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\menu_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\newSolution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_action_add.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\AzunnaAnyanwu.png" />

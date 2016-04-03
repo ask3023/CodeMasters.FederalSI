@@ -19,7 +19,8 @@ using CodeMasters.FederalSI.Droid.Adapters;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
-    [Activity(Label = "Dot Agile", MainLauncher = true, Icon = "@drawable/loadinganimated", Theme = "@style/FederalSITheme")]
+    [Activity(Label = "Dot Agile", //MainLauncher = true,
+        Icon = "@drawable/loadinganimated", Theme = "@style/FederalSITheme")]
     class SolutionMenu : Activity
     {
 
