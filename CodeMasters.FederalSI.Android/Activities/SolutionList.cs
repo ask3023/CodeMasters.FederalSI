@@ -71,6 +71,26 @@ namespace CodeMasters.FederalSI.Droid
             currentMode = UIMode.Solution;
         }
 
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.SolutionListMenu, menu);
+            return true;
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (item.ItemId == Resource.Id.menu_add)
+            {
+                // Show Add solution screen
+                var addNewSolutionIntent = new Intent(this, typeof(AddNewSolution));
+                StartActivity(addNewSolutionIntent);
+
+                return true;
+            }
+
+            return base.OnOptionsItemSelected(item);
+        }
+
         #region Button handlers
 
         private void BtnTest_Click(object sender, EventArgs e)
