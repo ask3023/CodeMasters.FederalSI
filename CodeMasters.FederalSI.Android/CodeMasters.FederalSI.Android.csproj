@@ -52,7 +52,7 @@
       <HintPath>..\External\Android\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SatelliteMenu">
-      <HintPath>..\Components\satellite-menu-1.2.1.0\lib\android\SatelliteMenu.dll</HintPath>
+      <HintPath>..\External\Android\SatelliteMenu.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

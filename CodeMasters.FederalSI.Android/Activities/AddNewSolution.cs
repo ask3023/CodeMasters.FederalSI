@@ -21,10 +21,14 @@ namespace CodeMasters.FederalSI.Droid.Activities
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.AddNewSolution);
             // Create your application here
-            Button button = FindViewById<Button>(Resource.Id.button);
-
-            button.Click += (o, e) => {
+            Button buttonSaveSolution = FindViewById<Button>(Resource.Id.buttonSaveSolution);
+            Button buttonCan = FindViewById<Button>(Resource.Id.buttonCancel);
+            buttonSaveSolution.Click += (o, e) => {
                 Toast.MakeText(this, "New Solution added Successfully.", ToastLength.Short).Show();
+            };
+
+            buttonCan.Click += (o, e) => {
+                Finish();
             };
         }
     }

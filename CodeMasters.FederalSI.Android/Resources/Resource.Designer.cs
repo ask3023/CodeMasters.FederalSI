@@ -921,32 +921,32 @@ namespace CodeMasters.FederalSI.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f070050
-			public const int abc_background_cache_hint_selector_material_dark = 2131165264;
-			
 			// aapt resource value: 0x7f070051
-			public const int abc_background_cache_hint_selector_material_light = 2131165265;
+			public const int abc_background_cache_hint_selector_material_dark = 2131165265;
 			
 			// aapt resource value: 0x7f070052
-			public const int abc_color_highlight_material = 2131165266;
+			public const int abc_background_cache_hint_selector_material_light = 2131165266;
+			
+			// aapt resource value: 0x7f070053
+			public const int abc_color_highlight_material = 2131165267;
 			
 			// aapt resource value: 0x7f070004
 			public const int abc_input_method_navigation_guard = 2131165188;
 			
-			// aapt resource value: 0x7f070053
-			public const int abc_primary_text_disable_only_material_dark = 2131165267;
-			
 			// aapt resource value: 0x7f070054
-			public const int abc_primary_text_disable_only_material_light = 2131165268;
+			public const int abc_primary_text_disable_only_material_dark = 2131165268;
 			
 			// aapt resource value: 0x7f070055
-			public const int abc_primary_text_material_dark = 2131165269;
+			public const int abc_primary_text_disable_only_material_light = 2131165269;
 			
 			// aapt resource value: 0x7f070056
-			public const int abc_primary_text_material_light = 2131165270;
+			public const int abc_primary_text_material_dark = 2131165270;
 			
 			// aapt resource value: 0x7f070057
-			public const int abc_search_url_text = 2131165271;
+			public const int abc_primary_text_material_light = 2131165271;
+			
+			// aapt resource value: 0x7f070058
+			public const int abc_search_url_text = 2131165272;
 			
 			// aapt resource value: 0x7f070005
 			public const int abc_search_url_text_normal = 2131165189;
@@ -957,11 +957,11 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f070007
 			public const int abc_search_url_text_selected = 2131165191;
 			
-			// aapt resource value: 0x7f070058
-			public const int abc_secondary_text_material_dark = 2131165272;
-			
 			// aapt resource value: 0x7f070059
-			public const int abc_secondary_text_material_light = 2131165273;
+			public const int abc_secondary_text_material_dark = 2131165273;
+			
+			// aapt resource value: 0x7f07005a
+			public const int abc_secondary_text_material_light = 2131165274;
 			
 			// aapt resource value: 0x7f070040
 			public const int accent = 2131165248;
@@ -1179,11 +1179,11 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f07003b
 			public const int switch_thumb_disabled_material_light = 2131165243;
 			
-			// aapt resource value: 0x7f07005a
-			public const int switch_thumb_material_dark = 2131165274;
-			
 			// aapt resource value: 0x7f07005b
-			public const int switch_thumb_material_light = 2131165275;
+			public const int switch_thumb_material_dark = 2131165275;
+			
+			// aapt resource value: 0x7f07005c
+			public const int switch_thumb_material_light = 2131165276;
 			
 			// aapt resource value: 0x7f07003c
 			public const int switch_thumb_normal_material_dark = 2131165244;
@@ -1192,7 +1192,10 @@ namespace CodeMasters.FederalSI.Droid
 			public const int switch_thumb_normal_material_light = 2131165245;
 			
 			// aapt resource value: 0x7f07004f
-			public const int theme_devicedefault_background = 2131165263;
+			public const int textboxBackground = 2131165263;
+			
+			// aapt resource value: 0x7f070050
+			public const int theme_devicedefault_background = 2131165264;
 			
 			// aapt resource value: 0x7f070041
 			public const int window_background = 2131165249;
@@ -1863,14 +1866,14 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f060082
 			public const int btnTest = 2131099778;
 			
-			// aapt resource value: 0x7f060058
-			public const int button = 2131099736;
-			
 			// aapt resource value: 0x7f060059
 			public const int buttonCancel = 2131099737;
 			
 			// aapt resource value: 0x7f06002c
 			public const int buttonPanel = 2131099692;
+			
+			// aapt resource value: 0x7f060058
+			public const int buttonSaveSolution = 2131099736;
 			
 			// aapt resource value: 0x7f060066
 			public const int cancel_action = 2131099750;

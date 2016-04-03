@@ -15,10 +15,9 @@
         android:layout_width="357.0dp"
         android:layout_height="wrap_content"
         android:id="@+id/edTxtSolutionName"
-        android:background="@color/cellbackSelected"
+        android:background="@color/textboxBackground"
         android:hint="Enter Solution Name"
         android:textSize="15.0dp"
-        android:textStyle="italic"
         android:textColor="@color/blue" />
     <TextView
         android:text=""
@@ -27,15 +26,19 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView1" />
     <EditText
-        android:inputType="textWebEditText"
+        android:inputType="textMultiLine"
         android:layout_width="357.0dp"
         android:layout_height="100.0dp"
         android:id="@+id/edTxtSolutionOverview"
-        android:background="@color/cellbackSelected"
+        android:background="@color/textboxBackground"
         android:hint="Enter Solution Overview"
         android:textSize="15.0dp"
-        android:textStyle="italic"
-        android:textColor="@color/blue" />
+        android:textColor="@color/blue"
+        android:isScrollContainer="true"
+        android:layoutDirection="ltr"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textAlignment="textStart" />
     <TextView
         android:text=""
         android:layout_width="357.0dp"
@@ -47,10 +50,9 @@
         android:layout_width="357.0dp"
         android:layout_height="wrap_content"
         android:id="@+id/edTxtSolutionContactName"
-        android:background="@color/cellbackSelected"
+        android:background="@color/textboxBackground"
         android:hint="Enter Solution Contact Name"
         android:textSize="15.0dp"
-        android:textStyle="italic"
         android:textColor="@color/blue" />
     <TextView
         android:text=""
@@ -63,10 +65,9 @@
         android:layout_width="357.0dp"
         android:layout_height="wrap_content"
         android:id="@+id/edTxtSolutionContactEmailAddress"
-        android:background="@color/cellbackSelected"
+        android:background="@color/textboxBackground"
         android:hint="Enter Solution Contact Email Address"
         android:textSize="15.0dp"
-        android:textStyle="italic"
         android:textColor="@color/blue" />
     <TextView
         android:text=""
@@ -79,10 +80,9 @@
         android:layout_width="357.0dp"
         android:layout_height="wrap_content"
         android:id="@+id/edTxtSolutionContactPhoneNumber"
-        android:background="@color/cellbackSelected"
+        android:background="@color/textboxBackground"
         android:hint="Enter Solution Contact Phone Number"
         android:textSize="15.0dp"
-        android:textStyle="italic"
         android:textColor="@color/blue" />
     <LinearLayout
         android:orientation="horizontal"
@@ -91,7 +91,7 @@
         android:paddingTop="10dp"
         android:id="@+id/hLinearLayout1">
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonSaveSolution"
             android:layout_width="108.0dp"
             android:layout_height="wrap_content"
             android:padding="10dp"
