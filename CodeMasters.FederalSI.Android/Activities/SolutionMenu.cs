@@ -16,10 +16,11 @@ using Android.Support.V7.Widget;
 using CodeMasters.FederalSI.Shared.Service;
 using CodeMasters.FederalSI.Shared.Model;
 using CodeMasters.FederalSI.Droid.Adapters;
+using AndroidHUD;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
-    [Activity(Label = "Dot Agile", //MainLauncher = true,
+    [Activity(Label = "Solution Detail", //MainLauncher = true,
         Icon = "@drawable/loadinganimated", Theme = "@style/FederalSITheme")]
     class SolutionMenu : Activity
     {
@@ -35,6 +36,7 @@ namespace CodeMasters.FederalSI.Droid.Activities
             string solutionJson = Intent.GetStringExtra("JsonSelectedSolutionString");
             var currentSolution = JsonHelper.Deserialize<Solution>(solutionJson);
 
+            this.Title = currentSolution.Name;
 
             //recycler
 
@@ -56,60 +58,54 @@ namespace CodeMasters.FederalSI.Droid.Activities
         {
 
             //Load your content here dynamically
+            string solutionJson = Intent.GetStringExtra("JsonSelectedSolutionString");
+            var currentSolution = JsonHelper.Deserialize<Solution>(solutionJson);
 
-            
-         
+
             var imageView = FindViewById<ImageView>(Resource.Id.dynamicImage1);
             var webview = FindViewById<WebView>(Resource.Id.webView1);
             //var cardview = FindViewById<CardView>(Resource.Id.card_view);
+            mRecyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
+            var overViewLayout = FindViewById<LinearLayout>(Resource.Id.overViewMainText);
 
             webview.Visibility = ViewStates.Invisible;
             imageView.Visibility = ViewStates.Invisible;
-            //cardview.Visibility = ViewStates.Invisible;
+            mRecyclerView.Visibility = ViewStates.Invisible;
+            overViewLayout.Visibility = ViewStates.Invisible;
 
+            if (e.MenuItem.Tag == (int)MenuItem.Overview)
+            {
+                overViewLayout.Visibility = ViewStates.Visible;
+                var overViewSub = FindViewById<TextView>(Resource.Id.overViewSubText);
+                overViewSub.Visibility = ViewStates.Visible;
+                overViewSub.Text = currentSolution.Overview;
+            }
 
             if (e.MenuItem.Tag == (int)MenuItem.Contact)
-            {
-                //set visibility
-                //cardview.Visibility = ViewStates.Visible;
+            {   
 
-                //var person_photo = FindViewById<ImageView>(Resource.Id.person_photo);
-                //person_photo.SetImageResource(Resource.Drawable.BrianBreit);
-
-                //var person_name = FindViewById<TextView>(Resource.Id.person_name);
-                //person_name.Text = "Brian Breit";
-
-                //var person_email = FindViewById<TextView>(Resource.Id.person_email);
-                //person_email.Text = @"bbreit@deloitte.com";
-
-                //var person_description = FindViewById<TextView>(Resource.Id.person_description);
-                //person_description.Text = "Leads the Federal System Development capability, with 20+ years of experience focusing on large technology-enabled business transformations across Financial Services and Health-related clients in Federal, State, and Commercial.";
-
-                string solutionJson = Intent.GetStringExtra("JsonSelectedSolutionString");
-                var currentSolution = JsonHelper.Deserialize<Solution>(solutionJson);
-
-                SetContentView(Resource.Layout.Recycler);
-                mRecyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
+                //SetContentView(Resource.Layout.Recycler);
+                mRecyclerView.Visibility = ViewStates.Visible;
 
                 // Plug in the linear layout manager:
                 mLayoutManager = new LinearLayoutManager(this);
                 mRecyclerView.SetLayoutManager(mLayoutManager);
 
-                var dotAgile = new Solution();
+                //var dotAgile = new Solution();
 
-                dotAgile.Contacts.Add(new Pointofcontact { Name = "Brian Breit", Email = @"bbreit@deloitte.com", Designation = "Partner",
-                    Description = "Leads the Federal System Development capability, with 20+ years of experience focusing on large technology-enabled business transformations across Financial Services and Health-related clients in Federal, State, and Commercial",
-                    ImageURL= "BrianBreit" });
-                dotAgile.Contacts.Add(new Pointofcontact { Name = "Azunna Anyanwu", Email = @"aanyanwu@deloitte.com", Designation = "Manager",
-                    Description = "15+ years of experience delivering solutions to clients in Federal & State. Expert at applying Agile frameworks such as Scrum & Rapid Application Development (RAD). Certified Scrum Master (CSM) and PMI Agile Professional (PMI-ACP).",
-                    ImageURL = "AzunnaAnyanwu" });
-                dotAgile.Contacts.Add(new Pointofcontact { Name = "Jason Bowers", Email = @"Jbowers@deloitte.com", Designation = "Director",
-                    Description = "Agile advocate with 15+ years in large-scale custom development. Leader in Agile practices to deliver across multiple technology platforms. Delivers solutions in Case Management and other collaborative, mission IT solutions.",
-                    ImageURL = "JasonBowers" });
+                //dotAgile.Contacts.Add(new Pointofcontact { Name = "Brian Breit", Email = @"bbreit@deloitte.com", Designation = "Partner",
+                //    Description = "Leads the Federal System Development capability, with 20+ years of experience focusing on large technology-enabled business transformations across Financial Services and Health-related clients in Federal, State, and Commercial",
+                //    ImageURL= "BrianBreit" });
+                //dotAgile.Contacts.Add(new Pointofcontact { Name = "Azunna Anyanwu", Email = @"aanyanwu@deloitte.com", Designation = "Manager",
+                //    Description = "15+ years of experience delivering solutions to clients in Federal & State. Expert at applying Agile frameworks such as Scrum & Rapid Application Development (RAD). Certified Scrum Master (CSM) and PMI Agile Professional (PMI-ACP).",
+                //    ImageURL = "AzunnaAnyanwu" });
+                //dotAgile.Contacts.Add(new Pointofcontact { Name = "Jason Bowers", Email = @"Jbowers@deloitte.com", Designation = "Director",
+                //    Description = "Agile advocate with 15+ years in large-scale custom development. Leader in Agile practices to deliver across multiple technology platforms. Delivers solutions in Case Management and other collaborative, mission IT solutions.",
+                //    ImageURL = "JasonBowers" });
 
 
                 // Plug in my adapter:
-                var mAdapter = new ContactsAdapter(dotAgile.Contacts);
+                var mAdapter = new ContactsAdapter(currentSolution.Contacts);
                 mRecyclerView.SetAdapter(mAdapter);
 
             }
@@ -125,7 +121,6 @@ namespace CodeMasters.FederalSI.Droid.Activities
             {
                 //set visibility
                 webview.Visibility = ViewStates.Visible;
-
                 webview.SetWebChromeClient(new WebChromeClient());
                 webview.Settings.AllowUniversalAccessFromFileURLs = true;
                 webview.Settings.JavaScriptEnabled = true;
@@ -133,8 +128,16 @@ namespace CodeMasters.FederalSI.Droid.Activities
                 //leverage browser view
                 // TODO: URL needs to be replaced with Solution.PagerUrl property
                 webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=http://federalsi.azurewebsites.net/api/solution/1/pager");
+                
+                // Show loading indicator
+
+                //while (webview.Progress < 100)
+                //{ AndHUD.Shared.Show(this, "Loading", -1, MaskType.Clear); }
+                //AndHUD.Shared.Dismiss();
             }
         }
+
+        
 
         enum MenuItem
         {
