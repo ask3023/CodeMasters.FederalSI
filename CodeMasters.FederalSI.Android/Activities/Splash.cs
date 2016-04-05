@@ -14,7 +14,8 @@ using System.Threading;
 
 namespace CodeMasters.FederalSI.Droid
 {
-    [Activity(Label = "", MainLauncher = true,Icon = "@drawable/loadinganimated",
+    [Activity(Label = "", MainLauncher = true,
+        Icon = "@drawable/loadinganimated",
                 NoHistory=true,
                 Theme = "@style/FederalSITheme")]
     public class Splash : Activity
