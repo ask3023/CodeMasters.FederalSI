@@ -97,10 +97,16 @@ namespace CodeMasters.FederalSI.Droid.Activities
 
             if (e.MenuItem.Tag == (int)MenuItem.InfoCard)
             {
-                //set visibility
-                imageView.Visibility = ViewStates.Visible;
-
-                imageView.SetImageResource(Resource.Drawable.solution1_InfoCard);
+                //set visibilitywebview.Visibility = ViewStates.Visible;
+                webview.SetWebChromeClient(new WebChromeClient());
+                webview.Settings.AllowUniversalAccessFromFileURLs = true;
+                webview.Settings.JavaScriptEnabled = true;
+                webview.Settings.AllowContentAccess = true;
+                //leverage browser view
+                // TODO: URL needs to be replaced with Solution.PagerUrl property
+                var path = "http://docs.google.com/gview?embedded=true&url=" + currentSolution.PagerUrl;
+                //webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=http://federalsi.azurewebsites.net/api/solution/1/pager");
+                webview.LoadUrl(path);
             }
             if (e.MenuItem.Tag == (int)MenuItem.Description)
             {
@@ -112,13 +118,11 @@ namespace CodeMasters.FederalSI.Droid.Activities
                 webview.Settings.AllowContentAccess = true;
                 //leverage browser view
                 // TODO: URL needs to be replaced with Solution.PagerUrl property
-                webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=http://federalsi.azurewebsites.net/api/solution/1/pager");
-                
+                var path = "http://docs.google.com/gview?embedded=true&url=" + currentSolution.InfoCardUrl;
+                //webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=http://federalsi.azurewebsites.net/api/solution/1/pager");
+                webview.LoadUrl(path);
                 // Show loading indicator
 
-                //while (webview.Progress < 100)
-                //{ AndHUD.Shared.Show(this, "Loading", -1, MaskType.Clear); }
-                //AndHUD.Shared.Dismiss();
             }
         }
 
