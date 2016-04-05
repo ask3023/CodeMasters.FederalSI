@@ -126,10 +126,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="App_Data\1\pager.pdf" />
     <Content Include="App_Data\1\infocard.pdf" />
     <Content Include="App_Data\4\infocard.pdf" />
     <Content Include="App_Data\4\pager.pdf" />
+    <Content Include="App_Data\1\pager.pdf" />
     <None Include="Properties\PublishProfiles\CodeMasters.pubxml" />
     <None Include="Properties\PublishProfiles\FederalSI %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\FederalSI.pubxml" />

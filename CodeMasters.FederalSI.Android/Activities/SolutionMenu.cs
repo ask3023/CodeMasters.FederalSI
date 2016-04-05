@@ -46,10 +46,10 @@ namespace CodeMasters.FederalSI.Droid.Activities
 
             button.AddItems(new[] {
         new SatelliteMenuButtonItem ((int)MenuItem.Overview, Resource.Drawable.ic_action_pin),
-        new SatelliteMenuButtonItem ((int)MenuItem.Description, Resource.Drawable.ic_action_news),
+        new SatelliteMenuButtonItem ((int)MenuItem.InfoCard, Resource.Drawable.ic_action_news),
         new SatelliteMenuButtonItem ((int)MenuItem.Contact, Resource.Drawable.ic_action_phone_start),
-        new SatelliteMenuButtonItem ((int)MenuItem.InfoCard, Resource.Drawable.ic_action_lab),
-        new SatelliteMenuButtonItem ((int)MenuItem.Pager, Resource.Drawable.ic_action_pie_chart)});
+        new SatelliteMenuButtonItem ((int)MenuItem.Pager, Resource.Drawable.ic_action_lab),
+        new SatelliteMenuButtonItem ((int)MenuItem.Description, Resource.Drawable.ic_action_pie_chart)});
 
             button.MenuItemClick += MenuClick;
 
@@ -98,17 +98,18 @@ namespace CodeMasters.FederalSI.Droid.Activities
             if (e.MenuItem.Tag == (int)MenuItem.InfoCard)
             {
                 //set visibilitywebview.Visibility = ViewStates.Visible;
+                webview.Visibility = ViewStates.Visible;
                 webview.SetWebChromeClient(new WebChromeClient());
                 webview.Settings.AllowUniversalAccessFromFileURLs = true;
                 webview.Settings.JavaScriptEnabled = true;
                 webview.Settings.AllowContentAccess = true;
                 //leverage browser view
                 // TODO: URL needs to be replaced with Solution.PagerUrl property
-                var path = "http://docs.google.com/gview?embedded=true&url=" + currentSolution.PagerUrl;
+                var path = "http://docs.google.com/gview?embedded=true&url=" + currentSolution.InfoCardUrl;
                 //webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=http://federalsi.azurewebsites.net/api/solution/1/pager");
                 webview.LoadUrl(path);
             }
-            if (e.MenuItem.Tag == (int)MenuItem.Description)
+            if (e.MenuItem.Tag == (int)MenuItem.Pager)
             {
                 //set visibility
                 webview.Visibility = ViewStates.Visible;
@@ -118,7 +119,7 @@ namespace CodeMasters.FederalSI.Droid.Activities
                 webview.Settings.AllowContentAccess = true;
                 //leverage browser view
                 // TODO: URL needs to be replaced with Solution.PagerUrl property
-                var path = "http://docs.google.com/gview?embedded=true&url=" + currentSolution.InfoCardUrl;
+                var path = "http://docs.google.com/gview?embedded=true&url=" + currentSolution.PagerUrl;
                 //webview.LoadUrl("http://docs.google.com/gview?embedded=true&url=http://federalsi.azurewebsites.net/api/solution/1/pager");
                 webview.LoadUrl(path);
                 // Show loading indicator
