@@ -38,8 +38,9 @@ namespace CodeMasters.FederalSI.Droid.Activities
 
             this.Title = currentSolution.Name;
 
-            //recycler
+            var overViewLayout = FindViewById<LinearLayout>(Resource.Id.overViewMainText);
 
+            SetOverViewForCurrentSolution(currentSolution, overViewLayout);
 
             var button = FindViewById<SatelliteMenuButton>(Resource.Id.menu);
 
@@ -75,10 +76,7 @@ namespace CodeMasters.FederalSI.Droid.Activities
 
             if (e.MenuItem.Tag == (int)MenuItem.Overview)
             {
-                overViewLayout.Visibility = ViewStates.Visible;
-                var overViewSub = FindViewById<TextView>(Resource.Id.overViewSubText);
-                overViewSub.Visibility = ViewStates.Visible;
-                overViewSub.Text = currentSolution.Overview;
+                SetOverViewForCurrentSolution(currentSolution, overViewLayout);
             }
 
             if (e.MenuItem.Tag == (int)MenuItem.Contact)
@@ -90,20 +88,7 @@ namespace CodeMasters.FederalSI.Droid.Activities
                 // Plug in the linear layout manager:
                 mLayoutManager = new LinearLayoutManager(this);
                 mRecyclerView.SetLayoutManager(mLayoutManager);
-
-                //var dotAgile = new Solution();
-
-                //dotAgile.Contacts.Add(new Pointofcontact { Name = "Brian Breit", Email = @"bbreit@deloitte.com", Designation = "Partner",
-                //    Description = "Leads the Federal System Development capability, with 20+ years of experience focusing on large technology-enabled business transformations across Financial Services and Health-related clients in Federal, State, and Commercial",
-                //    ImageURL= "BrianBreit" });
-                //dotAgile.Contacts.Add(new Pointofcontact { Name = "Azunna Anyanwu", Email = @"aanyanwu@deloitte.com", Designation = "Manager",
-                //    Description = "15+ years of experience delivering solutions to clients in Federal & State. Expert at applying Agile frameworks such as Scrum & Rapid Application Development (RAD). Certified Scrum Master (CSM) and PMI Agile Professional (PMI-ACP).",
-                //    ImageURL = "AzunnaAnyanwu" });
-                //dotAgile.Contacts.Add(new Pointofcontact { Name = "Jason Bowers", Email = @"Jbowers@deloitte.com", Designation = "Director",
-                //    Description = "Agile advocate with 15+ years in large-scale custom development. Leader in Agile practices to deliver across multiple technology platforms. Delivers solutions in Case Management and other collaborative, mission IT solutions.",
-                //    ImageURL = "JasonBowers" });
-
-
+                
                 // Plug in my adapter:
                 var mAdapter = new ContactsAdapter(currentSolution.Contacts);
                 mRecyclerView.SetAdapter(mAdapter);
@@ -137,7 +122,19 @@ namespace CodeMasters.FederalSI.Droid.Activities
             }
         }
 
-        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="currentSolution"></param>
+        /// <param name="overViewLayout"></param>
+        private void SetOverViewForCurrentSolution(Solution currentSolution, LinearLayout overViewLayout)
+        {
+            overViewLayout.Visibility = ViewStates.Visible;
+            var overViewSub = FindViewById<TextView>(Resource.Id.overViewSubText);
+            overViewSub.Visibility = ViewStates.Visible;
+            overViewSub.Text = currentSolution.Overview;
+        }
+
 
         enum MenuItem
         {
