@@ -51,7 +51,7 @@ namespace CodeMasters.FederalSI.WebApi.Controllers
             result.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment");
 
             result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
-            result.Content.Headers.ContentDisposition.FileName = string.Format("Pager{0}.pdf", solutionId);
+            result.Content.Headers.ContentDisposition.FileName = string.Format("Infocard{0}.pdf", solutionId);
 
             return result;
         }
