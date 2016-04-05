@@ -2016,8 +2016,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f060078
 			public const int menuListView = 2131099768;
 			
-			// aapt resource value: 0x7f06008b
-			public const int menu_add = 2131099787;
+			// aapt resource value: 0x7f06008c
+			public const int menu_add = 2131099788;
 			
 			// aapt resource value: 0x7f06001b
 			public const int middle = 2131099675;
@@ -2078,6 +2078,9 @@ namespace CodeMasters.FederalSI.Droid
 			
 			// aapt resource value: 0x7f060034
 			public const int scrollView = 2131099700;
+			
+			// aapt resource value: 0x7f06008b
+			public const int search = 2131099787;
 			
 			// aapt resource value: 0x7f060046
 			public const int search_badge = 2131099718;
