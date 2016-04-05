@@ -14,14 +14,16 @@ using System.Threading;
 
 namespace CodeMasters.FederalSI.Droid
 {
-    [Activity(Label = "", MainLauncher = true,Icon = "@drawable/loadinganimated",
+    [Activity(Label = "", MainLauncher = true,
                 NoHistory=true,
-                Theme = "@style/FederalSITheme")]
+                Theme = "@style/FederalSITheme.Splash")]
     public class Splash : Activity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+
+            SetContentView(Resource.Layout.Splash);
 
             // Show loading indicator
             AndHUD.Shared.Show(this, "Loading", -1, MaskType.Clear);

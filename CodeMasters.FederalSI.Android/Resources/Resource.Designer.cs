@@ -1686,85 +1686,91 @@ namespace CodeMasters.FederalSI.Droid
 			public const int DefaultButtonBackground = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int federal_si_cancel = 2130837578;
+			public const int DeloitteLogo = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int federal_si_save = 2130837579;
+			public const int federal_si_cancel = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int ic_action_add = 2130837580;
+			public const int federal_si_save = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int ic_action_lab = 2130837581;
+			public const int ic_action_add = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int ic_action_news = 2130837582;
+			public const int ic_action_lab = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int ic_action_phone_start = 2130837583;
+			public const int ic_action_news = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int ic_action_pie_chart = 2130837584;
+			public const int ic_action_phone_start = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_action_pin = 2130837585;
+			public const int ic_action_pie_chart = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int ic_errorstatus = 2130837586;
+			public const int ic_action_pin = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int ic_successstatus = 2130837587;
+			public const int ic_errorstatus = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int Icon = 2130837588;
+			public const int ic_successstatus = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int icon_contactus = 2130837589;
+			public const int Icon = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int icon_help = 2130837590;
+			public const int icon_contactus = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int icon_home = 2130837591;
+			public const int icon_help = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int JasonBowers = 2130837592;
+			public const int icon_home = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int loadinganimated = 2130837593;
+			public const int JasonBowers = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int menu = 2130837594;
+			public const int loadinganimated = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int menu_icon = 2130837595;
+			public const int menu = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int monoandroidsplash = 2130837596;
+			public const int menu_icon = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int newSolution = 2130837597;
-			
-			// aapt resource value: 0x7f020064
-			public const int notification_template_icon_bg = 2130837604;
+			public const int monoandroidsplash = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int roundedbg = 2130837598;
+			public const int newSolution = 2130837598;
+			
+			// aapt resource value: 0x7f020066
+			public const int notification_template_icon_bg = 2130837606;
 			
 			// aapt resource value: 0x7f02005f
-			public const int roundedbgdark = 2130837599;
+			public const int OverviewBorder = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int solution = 2130837600;
+			public const int roundedbg = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int solution1_InfoCard = 2130837601;
+			public const int roundedbgdark = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int SolutionItemSelector = 2130837602;
+			public const int solution = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int splash_screen = 2130837603;
+			public const int solution1_InfoCard = 2130837603;
+			
+			// aapt resource value: 0x7f020064
+			public const int SolutionItemSelector = 2130837604;
+			
+			// aapt resource value: 0x7f020065
+			public const int splash_screen = 2130837605;
 			
 			static Drawable()
 			{
@@ -2007,8 +2013,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f060068
 			public const int media_actions = 2131099752;
 			
-			// aapt resource value: 0x7f060089
-			public const int menu = 2131099785;
+			// aapt resource value: 0x7f06008b
+			public const int menu = 2131099787;
 			
 			// aapt resource value: 0x7f060075
 			public const int menuIconImgView = 2131099765;
@@ -2034,6 +2040,12 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f06000b
 			public const int normal = 2131099659;
 			
+			// aapt resource value: 0x7f060089
+			public const int overViewMainText = 2131099785;
+			
+			// aapt resource value: 0x7f06008a
+			public const int overViewSubText = 2131099786;
+			
 			// aapt resource value: 0x7f06002e
 			public const int parentPanel = 2131099694;
 			
@@ -2049,8 +2061,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f06005b
 			public const int person_photo = 2131099739;
 			
-			// aapt resource value: 0x7f06008a
-			public const int popoutMenu = 2131099786;
+			// aapt resource value: 0x7f06008c
+			public const int popoutMenu = 2131099788;
 			
 			// aapt resource value: 0x7f060072
 			public const int popoutMenuItem = 2131099762;
@@ -2388,7 +2400,10 @@ namespace CodeMasters.FederalSI.Droid
 			public const int SolutionMenu = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int support_simple_spinner_dropdown_item = 2130903088;
+			public const int Splash = 2130903088;
+			
+			// aapt resource value: 0x7f030031
+			public const int support_simple_spinner_dropdown_item = 2130903089;
 			
 			static Layout()
 			{
@@ -2947,6 +2962,9 @@ namespace CodeMasters.FederalSI.Droid
 			
 			// aapt resource value: 0x7f08013a
 			public const int FederalSITheme = 2131231034;
+			
+			// aapt resource value: 0x7f08013f
+			public const int FederalSITheme_Splash = 2131231039;
 			
 			// aapt resource value: 0x7f080136
 			public const int ListTheme = 2131231030;
