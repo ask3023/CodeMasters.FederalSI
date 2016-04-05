@@ -75,12 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\AddNewSolution.cs" />
-    <Compile Include="Activities\SolutionHome.cs" />
     <Compile Include="Activities\SolutionList.cs" />
     <Compile Include="Activities\SolutionMenu.cs" />
     <Compile Include="Activities\Splash.cs" />
-    <Compile Include="Adapters\GestureListener.cs" />
-    <Compile Include="Adapters\MenuListAdapterClass.cs" />
     <Compile Include="Adapters\ContactsAdapter.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
