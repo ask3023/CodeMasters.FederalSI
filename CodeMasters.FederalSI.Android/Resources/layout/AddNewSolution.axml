@@ -18,7 +18,9 @@
         android:background="@color/textboxBackground"
         android:hint="Enter Solution Name"
         android:textSize="15.0dp"
-        android:textColor="@color/blue" />
+        android:textColor="@color/blue"
+        android:cursorVisible="true"
+        android:contextClickable="true" />
     <TextView
         android:text=""
         android:layout_width="357.0dp"
@@ -38,7 +40,9 @@
         android:layoutDirection="ltr"
         android:scrollbars="vertical"
         android:singleLine="false"
-        android:textAlignment="textStart" />
+        android:textAlignment="textStart"
+        android:cursorVisible="true"
+        android:contextClickable="true" />
     <TextView
         android:text=""
         android:layout_width="357.0dp"
@@ -53,7 +57,8 @@
         android:background="@color/textboxBackground"
         android:hint="Enter Solution Contact Name"
         android:textSize="15.0dp"
-        android:textColor="@color/blue" />
+        android:textColor="@color/blue"
+        android:cursorVisible="true" />
     <TextView
         android:text=""
         android:layout_width="357.0dp"
@@ -68,7 +73,8 @@
         android:background="@color/textboxBackground"
         android:hint="Enter Solution Contact Email Address"
         android:textSize="15.0dp"
-        android:textColor="@color/blue" />
+        android:textColor="@color/blue"
+        android:cursorVisible="true" />
     <TextView
         android:text=""
         android:layout_width="357.0dp"
@@ -83,7 +89,8 @@
         android:background="@color/textboxBackground"
         android:hint="Enter Solution Contact Phone Number"
         android:textSize="15.0dp"
-        android:textColor="@color/blue" />
+        android:textColor="@color/blue"
+        android:cursorVisible="true" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -105,4 +112,26 @@
             android:background="@drawable/federal_si_cancel"
             android:layout_marginRight="18.0dp" />
     </LinearLayout>
+    <TextView
+        android:text=""
+        android:layout_width="357.0dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <TextView
+        android:text=""
+        android:layout_width="357.0dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <TextView
+        android:text=""
+        android:layout_width="357.0dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDisplay"
+        android:background="@color/gray"
+        android:textColor="@color/cellback"
+        android:textAlignment="center"
+        android:visibility="gone" />
 </LinearLayout>

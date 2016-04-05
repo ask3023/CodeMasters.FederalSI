@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
-    [Activity(Label = "Add New Solution",
+    [Activity(Label = "Add New Solution", MainLauncher = true,
         Icon = "@drawable/loadinganimated", Theme = "@style/FederalSITheme")]
     public class AddNewSolution : Activity
     {
@@ -22,9 +22,12 @@ namespace CodeMasters.FederalSI.Droid.Activities
             SetContentView(Resource.Layout.AddNewSolution);
             // Create your application here
             Button buttonSaveSolution = FindViewById<Button>(Resource.Id.buttonSaveSolution);
+            var textDisplay = FindViewById<TextView>(Resource.Id.textDisplay);
             Button buttonCan = FindViewById<Button>(Resource.Id.buttonCancel);
             buttonSaveSolution.Click += (o, e) => {
-                Toast.MakeText(this, "New Solution added Successfully.", ToastLength.Short).Show();
+                //Toast.MakeText(this, "New Solution submitted for review Successfully and being processed.\n The Solution reference number is: 72837837837",ToastLength.Long).Show();
+                textDisplay.Text = " New Solution submitted for review Successfully and being processed.The reference #: 72837837837. ";
+                textDisplay.Visibility = ViewStates.Visible;
             };
 
             buttonCan.Click += (o, e) => {
