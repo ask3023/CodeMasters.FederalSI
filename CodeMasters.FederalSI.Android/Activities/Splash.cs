@@ -14,7 +14,7 @@ using System.Threading;
 
 namespace CodeMasters.FederalSI.Droid
 {
-    [Activity(Label = "", 
+    [Activity(Label = "SI Marketplace", 
                 MainLauncher = true,
                 NoHistory=true,
                 Theme = "@style/FederalSITheme.Splash")]

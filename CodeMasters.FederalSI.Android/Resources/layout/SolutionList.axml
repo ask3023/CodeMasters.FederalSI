@@ -6,7 +6,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="416dp">
+        android:layout_height="405dp"
+        android:layout_margin="6dp">
         <ListView
             android:minWidth="25px"
             android:minHeight="25px"

@@ -2025,8 +2025,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f060079
 			public const int menuListView = 2131099769;
 			
-			// aapt resource value: 0x7f06008f
-			public const int menu_add = 2131099791;
+			// aapt resource value: 0x7f060091
+			public const int menu_add = 2131099793;
 			
 			// aapt resource value: 0x7f06001b
 			public const int middle = 2131099675;
@@ -2094,8 +2094,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f060034
 			public const int scrollView = 2131099700;
 			
-			// aapt resource value: 0x7f06008e
-			public const int search = 2131099790;
+			// aapt resource value: 0x7f060090
+			public const int search = 2131099792;
 			
 			// aapt resource value: 0x7f060046
 			public const int search_badge = 2131099718;
@@ -2144,6 +2144,12 @@ namespace CodeMasters.FederalSI.Droid
 			
 			// aapt resource value: 0x7f06002d
 			public const int spacer = 2131099693;
+			
+			// aapt resource value: 0x7f06008e
+			public const int splashImage = 2131099790;
+			
+			// aapt resource value: 0x7f06008f
+			public const int splashText = 2131099791;
 			
 			// aapt resource value: 0x7f060008
 			public const int split_action_bar = 2131099656;
