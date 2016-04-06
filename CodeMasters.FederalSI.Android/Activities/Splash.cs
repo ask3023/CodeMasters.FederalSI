@@ -15,6 +15,7 @@ using System.Threading;
 namespace CodeMasters.FederalSI.Droid
 {
     [Activity(Label = "", 
+                MainLauncher = true,
                 NoHistory=true,
                 Theme = "@style/FederalSITheme.Splash")]
     public class Splash : Activity

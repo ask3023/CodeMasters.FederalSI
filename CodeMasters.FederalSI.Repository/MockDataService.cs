@@ -101,32 +101,34 @@ namespace CodeMasters.FederalSI.Repository
             solutions.Add(legacyModernization);
 
 
-            SolutionMock solution01 = new SolutionMock()
+            SolutionMock rmoSolution = new SolutionMock()
             {
                 Id = 3,
-                Name = "Solution01"
+                Name = "Results Management Office",
+                Overview = "The success factors for large transformation programs extend beyond just strong program management capabilities. A RMO addresses the limitations of traditionally designed PMOs by directly linking IT program operations with broader organizational goals. The PMO focuses on administration, while the RMO focuses on value and outcomes delivered to the organization by the program."
             };
 
-            solution01.EVDCollection.Add(BuildEVDItem(EVDType.Code));
-            solution01.EVDCollection.Add(BuildEVDItem(EVDType.Test));
-            solution01.EVDCollection.Add(BuildEVDItem(EVDType.Requirement));
-            solution01.EVDCollection.Add(BuildEVDItem(EVDType.KeyImpactDeliverables));
+            rmoSolution.EVDCollection.Add(BuildEVDItem(EVDType.Code));
+            rmoSolution.EVDCollection.Add(BuildEVDItem(EVDType.Test));
+            rmoSolution.EVDCollection.Add(BuildEVDItem(EVDType.Requirement));
+            rmoSolution.EVDCollection.Add(BuildEVDItem(EVDType.KeyImpactDeliverables));
 
-            solutions.Add(solution01);
+            solutions.Add(rmoSolution);
 
-            SolutionMock solution02 = new SolutionMock()
+            SolutionMock sdmSolution = new SolutionMock()
             {
                 Id = 5,
-                Name = "Solution02"
+                Name = "Software Delivery Modernization",
+                Overview = "Software Delivery Modernization (SDM) is a solution that transforms software development. It leverages cloud as the enabler for a shift in software development and delivery methodologies, and allows agencies to make progress against Cloud First and Digital Services mandates."
             };
 
-            solution02.EVDCollection.Add(BuildEVDItem(EVDType.Code));
-            solution02.EVDCollection.Add(BuildEVDItem(EVDType.Test));
-            solution02.EVDCollection.Add(BuildEVDItem(EVDType.Project));
-            solution02.EVDCollection.Add(BuildEVDItem(EVDType.ProjectHealthMetrics));
-            solution02.EVDCollection.Add(BuildEVDItem(EVDType.Deployment));
+            sdmSolution.EVDCollection.Add(BuildEVDItem(EVDType.Code));
+            sdmSolution.EVDCollection.Add(BuildEVDItem(EVDType.Test));
+            sdmSolution.EVDCollection.Add(BuildEVDItem(EVDType.Project));
+            sdmSolution.EVDCollection.Add(BuildEVDItem(EVDType.ProjectHealthMetrics));
+            sdmSolution.EVDCollection.Add(BuildEVDItem(EVDType.Deployment));
 
-            solutions.Add(solution02);
+            solutions.Add(sdmSolution);
 
             SolutionMock solution03 = new SolutionMock()
             {
