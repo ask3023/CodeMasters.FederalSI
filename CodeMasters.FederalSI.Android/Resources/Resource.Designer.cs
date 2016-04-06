@@ -1686,94 +1686,100 @@ namespace CodeMasters.FederalSI.Droid
 			public const int chevron_right = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int DefaultButtonBackground = 2130837578;
+			public const int CursorColor = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int DeloitteLogo = 2130837579;
+			public const int DefaultButtonBackground = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int federal_si_cancel = 2130837580;
+			public const int DeloitteLogo = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int federal_si_save = 2130837581;
+			public const int EditTextStyle = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int ic_action_add = 2130837582;
+			public const int federal_si_cancel = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int ic_action_lab = 2130837583;
+			public const int federal_si_save = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int ic_action_news = 2130837584;
+			public const int ic_action_add = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_action_phone_start = 2130837585;
+			public const int ic_action_lab = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int ic_action_pie_chart = 2130837586;
+			public const int ic_action_news = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int ic_action_pin = 2130837587;
+			public const int ic_action_phone_start = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int ic_errorstatus = 2130837588;
+			public const int ic_action_pie_chart = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int ic_successstatus = 2130837589;
+			public const int ic_action_pin = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int Icon = 2130837590;
+			public const int ic_errorstatus = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int icon_contactus = 2130837591;
+			public const int ic_successstatus = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int icon_help = 2130837592;
+			public const int Icon = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int icon_home = 2130837593;
+			public const int icon_contactus = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int JasonBowers = 2130837594;
+			public const int icon_help = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int loadinganimated = 2130837595;
+			public const int icon_home = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int menu = 2130837596;
+			public const int JasonBowers = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int menu_icon = 2130837597;
+			public const int loadinganimated = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int monoandroidsplash = 2130837598;
+			public const int menu = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int newSolution = 2130837599;
-			
-			// aapt resource value: 0x7f020067
-			public const int notification_template_icon_bg = 2130837607;
+			public const int menu_icon = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int OverviewBorder = 2130837600;
+			public const int monoandroidsplash = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int roundedbg = 2130837601;
+			public const int newSolution = 2130837601;
+			
+			// aapt resource value: 0x7f020069
+			public const int notification_template_icon_bg = 2130837609;
 			
 			// aapt resource value: 0x7f020062
-			public const int roundedbgdark = 2130837602;
+			public const int OverviewBorder = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int solution = 2130837603;
+			public const int roundedbg = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int solution1_InfoCard = 2130837604;
+			public const int roundedbgdark = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int SolutionItemSelector = 2130837605;
+			public const int solution = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int splash_screen = 2130837606;
+			public const int solution1_InfoCard = 2130837606;
+			
+			// aapt resource value: 0x7f020067
+			public const int SolutionItemSelector = 2130837607;
+			
+			// aapt resource value: 0x7f020068
+			public const int splash_screen = 2130837608;
 			
 			static Drawable()
 			{
