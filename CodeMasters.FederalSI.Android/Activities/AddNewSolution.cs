@@ -26,7 +26,7 @@ namespace CodeMasters.FederalSI.Droid.Activities
             Button buttonCan = FindViewById<Button>(Resource.Id.buttonCancel);
             buttonSaveSolution.Click += (o, e) => {
                 //Toast.MakeText(this, "New Solution submitted for review Successfully and being processed.\n The Solution reference number is: 72837837837",ToastLength.Long).Show();
-                textDisplay.Text = "New Solution submitted for review successfully! and being processed.The reference #: 72837837837.";
+                textDisplay.Text = "New Solution is submitted successfully for review and being processed.The reference #: 72837837837.";
                 textDisplay.Visibility = ViewStates.Visible;
             };
 

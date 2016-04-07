@@ -13,7 +13,7 @@
     <EditText
         android:inputType="text"
         android:layout_width="357.0dp"
-        android:layout_height="25.0dp"
+        android:layout_height="wrap_content"
         android:id="@+id/edTxtSolutionName"
         android:hint="Enter Solution Name"
         android:textSize="15.0dp"
@@ -119,24 +119,28 @@
         android:paddingBottom="5dp" />
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:layout_width="328.0dp"
         android:layout_height="50.0dp"
         android:paddingTop="10dp"
-        android:id="@+id/hLinearLayout1">
+        android:id="@+id/hLinearLayout1"
+        android:layout_margin="20.0dp"
+        android:paddingLeft="180dp">
         <Button
             android:id="@+id/buttonSaveSolution"
-            android:layout_width="108.0dp"
+            android:layout_width="50.0dp"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@drawable/buttonSave"
-            android:layout_marginRight="18.0dp" />
+            android:padding="20dp"
+            android:background="@drawable/ic_action_save"
+            android:layout_marginRight="18.0dp"
+            android:text="Save" />
         <Button
             android:id="@+id/buttonCancel"
-            android:layout_width="108.0dp"
+            android:layout_width="50.0dp"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@drawable/federal_si_cancel"
-            android:layout_marginRight="18.0dp" />
+            android:padding="20dp"
+            android:background="@drawable/ic_action_cancel"
+            android:layout_marginRight="18.0dp"
+            android:text="Cancel" />
     </LinearLayout>
     <TextView
         android:text=""
