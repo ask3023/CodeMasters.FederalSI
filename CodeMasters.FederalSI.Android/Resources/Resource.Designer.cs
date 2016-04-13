@@ -1689,103 +1689,109 @@ namespace CodeMasters.FederalSI.Droid
 			public const int CursorColor = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int DefaultButtonBackground = 2130837579;
+			public const int D = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int DeloitteLogo = 2130837580;
+			public const int DefaultButtonBackground = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int EditTextStyle = 2130837581;
+			public const int DeloitteLogo = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int federal_si_cancel = 2130837582;
+			public const int EditTextStyle = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int federal_si_save = 2130837583;
+			public const int federal_si_cancel = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int ic_action_add = 2130837584;
+			public const int federal_si_save = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_action_cancel = 2130837585;
+			public const int HighlightButtonBackground = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int ic_action_lab = 2130837586;
+			public const int ic_action_add = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int ic_action_news = 2130837587;
+			public const int ic_action_cancel = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int ic_action_phone_start = 2130837588;
+			public const int ic_action_lab = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int ic_action_pie_chart = 2130837589;
+			public const int ic_action_news = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int ic_action_pin = 2130837590;
+			public const int ic_action_phone_start = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int ic_action_save = 2130837591;
+			public const int ic_action_pie_chart = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int ic_errorstatus = 2130837592;
+			public const int ic_action_pin = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int ic_successstatus = 2130837593;
+			public const int ic_action_save = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int Icon = 2130837594;
+			public const int ic_errorstatus = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int icon_contactus = 2130837595;
+			public const int ic_successstatus = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int icon_help = 2130837596;
+			public const int Icon = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int icon_home = 2130837597;
+			public const int icon_contactus = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int JasonBowers = 2130837598;
+			public const int icon_help = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int loadinganimated = 2130837599;
+			public const int icon_home = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int menu = 2130837600;
+			public const int JasonBowers = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int menu_icon = 2130837601;
+			public const int LayoutBorder = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int monoandroidsplash = 2130837602;
+			public const int loadinganimated = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int newSolution = 2130837603;
-			
-			// aapt resource value: 0x7f02006b
-			public const int notification_template_icon_bg = 2130837611;
+			public const int menu = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int OverviewBorder = 2130837604;
+			public const int menu_icon = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int roundedbg = 2130837605;
+			public const int newSolution = 2130837605;
+			
+			// aapt resource value: 0x7f02006d
+			public const int notification_template_icon_bg = 2130837613;
 			
 			// aapt resource value: 0x7f020066
-			public const int roundedbgdark = 2130837606;
+			public const int OverviewBorder = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int solution = 2130837607;
+			public const int roundedbg = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int solution1_InfoCard = 2130837608;
+			public const int roundedbgdark = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int SolutionItemSelector = 2130837609;
+			public const int solution = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int splash_screen = 2130837610;
+			public const int solution1_InfoCard = 2130837610;
+			
+			// aapt resource value: 0x7f02006b
+			public const int SolutionItemSelector = 2130837611;
+			
+			// aapt resource value: 0x7f02006c
+			public const int splash_screen = 2130837612;
 			
 			static Drawable()
 			{
@@ -1860,32 +1866,32 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f060019
 			public const int beginning = 2131099673;
 			
-			// aapt resource value: 0x7f06007f
-			public const int btnCode = 2131099775;
-			
-			// aapt resource value: 0x7f060082
-			public const int btnDeployment = 2131099778;
-			
-			// aapt resource value: 0x7f060086
-			public const int btnKID = 2131099782;
+			// aapt resource value: 0x7f060081
+			public const int btnCode = 2131099777;
 			
 			// aapt resource value: 0x7f060084
-			public const int btnPHM = 2131099780;
+			public const int btnDeployment = 2131099780;
 			
-			// aapt resource value: 0x7f06007d
-			public const int btnProject = 2131099773;
+			// aapt resource value: 0x7f060088
+			public const int btnKID = 2131099784;
 			
-			// aapt resource value: 0x7f06007e
-			public const int btnRequirement = 2131099774;
+			// aapt resource value: 0x7f060086
+			public const int btnPHM = 2131099782;
+			
+			// aapt resource value: 0x7f06007f
+			public const int btnProject = 2131099775;
 			
 			// aapt resource value: 0x7f060080
-			public const int btnSupport = 2131099776;
+			public const int btnRequirement = 2131099776;
 			
-			// aapt resource value: 0x7f060087
-			public const int btnTC = 2131099783;
+			// aapt resource value: 0x7f060082
+			public const int btnSupport = 2131099778;
 			
-			// aapt resource value: 0x7f060083
-			public const int btnTest = 2131099779;
+			// aapt resource value: 0x7f060089
+			public const int btnTC = 2131099785;
+			
+			// aapt resource value: 0x7f060085
+			public const int btnTest = 2131099781;
 			
 			// aapt resource value: 0x7f060059
 			public const int buttonCancel = 2131099737;
@@ -1929,8 +1935,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f06000d
 			public const int disableHome = 2131099661;
 			
-			// aapt resource value: 0x7f060089
-			public const int dynamicImage1 = 2131099785;
+			// aapt resource value: 0x7f06008b
+			public const int dynamicImage1 = 2131099787;
 			
 			// aapt resource value: 0x7f060055
 			public const int edTxtSolutionContactEmailAddress = 2131099733;
@@ -1956,6 +1962,9 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f060072
 			public const int end_padder = 2131099762;
 			
+			// aapt resource value: 0x7f06007e
+			public const int evdTitle = 2131099774;
+			
 			// aapt resource value: 0x7f060026
 			public const int expand_activities_button = 2131099686;
 			
@@ -1965,11 +1974,11 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f060057
 			public const int hLinearLayout1 = 2131099735;
 			
-			// aapt resource value: 0x7f060081
-			public const int hLinearLayout2 = 2131099777;
+			// aapt resource value: 0x7f060083
+			public const int hLinearLayout2 = 2131099779;
 			
-			// aapt resource value: 0x7f060085
-			public const int hLinearLayout3 = 2131099781;
+			// aapt resource value: 0x7f060087
+			public const int hLinearLayout3 = 2131099783;
 			
 			// aapt resource value: 0x7f060005
 			public const int home = 2131099653;
@@ -2028,8 +2037,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f060069
 			public const int media_actions = 2131099753;
 			
-			// aapt resource value: 0x7f06008c
-			public const int menu = 2131099788;
+			// aapt resource value: 0x7f06008e
+			public const int menu = 2131099790;
 			
 			// aapt resource value: 0x7f060076
 			public const int menuIconImgView = 2131099766;
@@ -2037,8 +2046,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f060079
 			public const int menuListView = 2131099769;
 			
-			// aapt resource value: 0x7f060091
-			public const int menu_add = 2131099793;
+			// aapt resource value: 0x7f060093
+			public const int menu_add = 2131099795;
 			
 			// aapt resource value: 0x7f06001b
 			public const int middle = 2131099675;
@@ -2055,11 +2064,11 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f06000b
 			public const int normal = 2131099659;
 			
-			// aapt resource value: 0x7f06008a
-			public const int overViewMainText = 2131099786;
+			// aapt resource value: 0x7f06008c
+			public const int overViewMainText = 2131099788;
 			
-			// aapt resource value: 0x7f06008b
-			public const int overViewSubText = 2131099787;
+			// aapt resource value: 0x7f06008d
+			public const int overViewSubText = 2131099789;
 			
 			// aapt resource value: 0x7f06002e
 			public const int parentPanel = 2131099694;
@@ -2076,8 +2085,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f06005c
 			public const int person_photo = 2131099740;
 			
-			// aapt resource value: 0x7f06008d
-			public const int popoutMenu = 2131099789;
+			// aapt resource value: 0x7f06008f
+			public const int popoutMenu = 2131099791;
 			
 			// aapt resource value: 0x7f060073
 			public const int popoutMenuItem = 2131099763;
@@ -2106,8 +2115,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f060034
 			public const int scrollView = 2131099700;
 			
-			// aapt resource value: 0x7f060090
-			public const int search = 2131099792;
+			// aapt resource value: 0x7f060092
+			public const int search = 2131099794;
 			
 			// aapt resource value: 0x7f060046
 			public const int search_badge = 2131099718;
@@ -2157,11 +2166,11 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f06002d
 			public const int spacer = 2131099693;
 			
-			// aapt resource value: 0x7f06008e
-			public const int splashImage = 2131099790;
+			// aapt resource value: 0x7f060090
+			public const int splashImage = 2131099792;
 			
-			// aapt resource value: 0x7f06008f
-			public const int splashText = 2131099791;
+			// aapt resource value: 0x7f060091
+			public const int splashText = 2131099793;
 			
 			// aapt resource value: 0x7f060008
 			public const int split_action_bar = 2131099656;
@@ -2229,8 +2238,11 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f060013
 			public const int useLogo = 2131099667;
 			
-			// aapt resource value: 0x7f060088
-			public const int webView1 = 2131099784;
+			// aapt resource value: 0x7f06007d
+			public const int vLinearLayout3 = 2131099773;
+			
+			// aapt resource value: 0x7f06008a
+			public const int webView1 = 2131099786;
 			
 			// aapt resource value: 0x7f060020
 			public const int withText = 2131099680;
@@ -2987,14 +2999,11 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f08013a
 			public const int FederalSITheme = 2131231034;
 			
-			// aapt resource value: 0x7f08013f
-			public const int FederalSITheme_Splash = 2131231039;
+			// aapt resource value: 0x7f08013e
+			public const int FederalSITheme_Splash = 2131231038;
 			
 			// aapt resource value: 0x7f080136
 			public const int ListTheme = 2131231030;
-			
-			// aapt resource value: 0x7f08013d
-			public const int Mono_Android_Theme_Splash = 2131231037;
 			
 			// aapt resource value: 0x7f080013
 			public const int Platform_AppCompat = 2131230739;
@@ -3275,8 +3284,8 @@ namespace CodeMasters.FederalSI.Droid
 			// aapt resource value: 0x7f0800ec
 			public const int Theme_AppCompat_NoActionBar = 2131230956;
 			
-			// aapt resource value: 0x7f08013e
-			public const int Theme_FederalSITheme = 2131231038;
+			// aapt resource value: 0x7f08013d
+			public const int Theme_FederalSITheme = 2131231037;
 			
 			// aapt resource value: 0x7f0800ed
 			public const int ThemeOverlay_AppCompat = 2131230957;

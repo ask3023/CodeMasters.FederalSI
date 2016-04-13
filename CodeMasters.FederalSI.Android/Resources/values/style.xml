@@ -29,8 +29,8 @@
     <item name="android:paddingLeft">12dp</item>
     <item name="android:paddingRight">12dp</item>
     <item name="android:textColor">@color/buttonDefaultTextColor</item>
-    <!--<item name="android:background">@drawable/DefaultButtonBackground</item>-->
-    <item name="android:background">@color/buttonDefaultBackground</item>
+    <item name="android:background">@drawable/DefaultButtonBackground</item>
+    <!--<item name="android:background">@color/buttonDefaultBackground</item>-->
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">match_parent</item>
   </style>

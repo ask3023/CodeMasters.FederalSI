@@ -20,8 +20,8 @@ using AndroidHUD;
 
 namespace CodeMasters.FederalSI.Droid.Activities
 {
-    [Activity(Label = "Solution Detail",
-        Icon = "@drawable/solution", Theme = "@style/FederalSITheme")]
+    [Activity(Label = "Solution Details",
+        Icon = "@drawable/D", Theme = "@style/FederalSITheme")]
     class SolutionMenu : Activity
     {
 

@@ -13,7 +13,7 @@ using Android.Widget;
 namespace CodeMasters.FederalSI.Droid.Activities
 {
     [Activity(Label = "Add New Solution",
-        Icon = "@drawable/solution", Theme = "@style/FederalSITheme")]
+        Icon = "@drawable/D", Theme = "@style/FederalSITheme")]
     public class AddNewSolution : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

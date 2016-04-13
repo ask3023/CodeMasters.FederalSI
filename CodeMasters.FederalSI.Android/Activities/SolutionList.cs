@@ -16,7 +16,7 @@ using CodeMasters.FederalSI.Droid.Activities;
 
 namespace CodeMasters.FederalSI.Droid
 {
-    [Activity(Label = "SI Solutions", Icon = "@drawable/solution" , Theme = "@style/FederalSITheme"
+    [Activity(Label = "SI Solutions", Icon = "@drawable/D" , Theme = "@style/FederalSITheme"
         )]  
     public class SolutionList : Activity
     {
@@ -234,13 +234,15 @@ namespace CodeMasters.FederalSI.Droid
         private void SelectButton(Button selectButton)
         {
             selectButton.SetTextColor(textHighlightColor);
-            selectButton.SetBackgroundResource(Resource.Color.buttonHighlightBackground);
+            // selectButton.SetBackgroundResource(Resource.Color.buttonHighlightBackground);
+            selectButton.SetBackgroundResource(Resource.Drawable.HighlightButtonBackground);
         }
 
         private void UnselectButton(Button unselectButton)
         {
             unselectButton.SetTextColor(textDefaultColor);
-            unselectButton.SetBackgroundResource(Resource.Color.buttonDefaultBackground);
+            // unselectButton.SetBackgroundResource(Resource.Color.buttonDefaultBackground);
+            unselectButton.SetBackgroundResource(Resource.Drawable.DefaultButtonBackground);
         }
 
         private Button EvdTypeToButton(EVDType evdType)
